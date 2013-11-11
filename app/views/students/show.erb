@@ -32,6 +32,27 @@
     <% end %>
 </p>
 
+
+<b>My Cart</b>
+<table>
+<tr>
+	<td>Course Name</td>
+	<td>Price</td>
+	<td>Capacity</td>
+</tr>
+<% @my_cart.each do |course| %>
+  <tr>
+    	<td><%= course.name %></td>
+    	<td><%= course.price %></td>
+    	<td><%= course.capacity %></td>
+  </tr>
+<% end %>
+</table>
+<td> Total price is <%= @total_price %></td>
+<%= button_to("Empty Cart", {:controller => "students", :action => "EmptyCart"}, :remote => false, confirm: 'Are you sure to empty the cart?') %>
+<%= button_to("Checkout", credit_cards_url, method: :get, :remote => false) %>
+
+
 <b>My Courses</b>
 <table>
 <tr>
@@ -42,6 +63,8 @@
 <% @my_courses.each do |course| %>
   <tr>
     	<td><%= course.name %></td>
+    	<td><%= course.price %></td>		
+    	<td><%= course.capacity %></td>
   </tr>
 <% end %>
 </table>
@@ -58,9 +81,12 @@
 <% @courses.each do |course| %>
 <tr>
 	<td><%= course.name %></td>
-	<td><%= button_to("enroll", {:url => student_url, :course_id => course.id }, :remote => false) %></td>	
+	<td><%= course.price %></td>		
+	<td><%= course.capacity %></td>
+	<td><%= button_to("Add to Cart", {:controller => "students", :action => "addtoCart", :course_id => course.id}, :remote => false) %></td>	
 </tr>
 <% end %>
+
 </table>
 
 

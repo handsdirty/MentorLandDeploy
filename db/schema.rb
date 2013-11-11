@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131106174116) do
+ActiveRecord::Schema.define(:version => 20131111211435) do
 
   create_table "courses", :force => true do |t|
     t.integer  "user_id"
@@ -25,7 +25,34 @@ ActiveRecord::Schema.define(:version => 20131106174116) do
     t.datetime "updated_at",  :null => false
   end
 
+  create_table "credit_cards", :force => true do |t|
+    t.string   "last_name"
+    t.string   "first_name"
+    t.string   "number"
+    t.string   "month"
+    t.string   "year"
+    t.string   "verification_value"
+    t.string   "billing_address"
+    t.string   "card_type"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
   create_table "enrollments", :id => false, :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "course_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "hascreditcards", :id => false, :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "credit_card_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "line_items", :id => false, :force => true do |t|
     t.integer  "user_id"
     t.integer  "course_id"
     t.datetime "created_at", :null => false

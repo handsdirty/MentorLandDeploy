@@ -13,7 +13,12 @@ Mentorland::Application.routes.draw do
   post "mentor" => "mentors#createCourse"
   
   get "student" => "students#show"
-  post "student" => "students#addCourse"
+  post "student" => "students#show"
+  post "student/EmptyCart" => "students#EmptyCart"
+  post "student/addtoCart" => "students#addtoCart"
+  post "student/checkout" => "students#checkout"
+  get "credit_cards" => "creditcards#show"
+	post "credit_cards" => "creditcards#create"
   get "admin" => "users#index"
 
   # The priority is based upon order of creation:

@@ -16,7 +16,7 @@ class MentorsController < ApplicationController
         flash[:notice] = "Course was successfully created!" 
         format.html { redirect_to mentor_url }
       else 
-	flash[:error] = "Cannot add this course!"
+				flash[:error] = "Cannot add this course!"
         format.html { redirect_to mentor_url }
       end
     end

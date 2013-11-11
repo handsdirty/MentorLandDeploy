@@ -37,4 +37,8 @@ end
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-rvm', '~> 0.0.3'
+  
+gem 'activemerchant'
+gem 'haml', '~> 3.1.1'
+
 
