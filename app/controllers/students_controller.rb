@@ -72,7 +72,7 @@ class StudentsController < ApplicationController
 								:password => 'password')
 
 		# ActiveMerchant accepts all amounts as Integer values in cents
-		amount = @total_price * 1
+		amount = @total_price * 100
 
 		# The card verification value is also known as CVV2, CVC2, or CID
 		credit_card = ActiveMerchant::Billing::CreditCard.new(
@@ -81,7 +81,7 @@ class StudentsController < ApplicationController
 										:number             => @card.number,
 										:month              => @card.month.to_i,
 										:year               => @card.year.to_i,
-										:verification_value => @card.verification_value.to_i)
+										:verification_value => @card.verification_value)
 
 		# Validating the card automatically detects the card type
 		if credit_card.valid?
