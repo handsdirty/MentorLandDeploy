@@ -32,7 +32,7 @@ group :test do
   gem 'launchy'
 end
 group :production do
-  gem mysql2
+  gem 'mysql2'
 end
 # Deploy with Capistrano
   gem 'capistrano', '~> 3.0.0'
