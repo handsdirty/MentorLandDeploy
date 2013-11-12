@@ -1,0 +1,20 @@
+<b>My Credit Cards</b>
+<table>
+<tr>
+	<td>Card No.</td>
+</tr>
+<% @my_credit_cards.each do |card| %>
+  <tr>
+    <td><%= card.display_number %></td>
+	<td><%= button_to("User this card", {:controller => "students", :action => "checkout", :credit_card_id => card.id}, :remote => false) %></td>	
+  </tr>
+<% end %>
+</table>
+
+<p>
+<b>New Credit Card</b>
+
+<%= render 'form' %>
+
+</p>
+<%= link_to 'Back', student_url %>

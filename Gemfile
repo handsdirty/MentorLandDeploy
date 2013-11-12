@@ -32,13 +32,11 @@ group :test do
   gem 'launchy'
 end
 
-group :production do
-  gem 'mysql2'
-end
-
 # Deploy with Capistrano
   gem 'capistrano', '~> 3.0.0'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-rvm', '~> 0.0.3'
 
+gem 'activemerchant'
+gem 'haml', '~> 3.1.1'
