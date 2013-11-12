@@ -20,6 +20,7 @@ class StudentsController < ApplicationController
     end		
 		@my_cart = my_cart
     @courses = Course.all
+    @json = Course.all.to_gmaps4rails
   end
 
   # POST /students/1	add a course to a student

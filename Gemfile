@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '3.2.13'
 gem 'sqlite3'
+gem 'gmaps4rails', '1.5.6'
+gem 'geocoder'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'

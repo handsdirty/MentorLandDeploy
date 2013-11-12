@@ -1,3 +1,5 @@
+<%= stylesheet_link_tag 'gmaps4rails' %>
+
 <p>
   <b>Email:</b>
   <%= @mentor.email %>
@@ -38,12 +40,14 @@
 	<td>Course Name</td>
 	<td>Price</td>
 	<td>Capacity</td>
+  <td>Address</td>
 </tr>
 <% @courses.each do |course| %>
   <tr>
     	<td><%= course.name %></td>
 	<td><%= course.price %></td>
 	<td><%= course.capacity %></td>
+  <td><%= course.address%></td>
   </tr>
 <% end %>
 </table>
@@ -66,8 +70,9 @@
 	<%= f.input :name %>
 	<%= f.input :price, collection: 0..50 %>
 	<%= f.input :capacity, collection: 1..50 %>
+  <%= f.input :address %>
 	<%= f.hidden_field :user_id, :value => @mentor.id %>
 	<%= f.button :submit %>
 <% end %>
-
+<%=  gmaps4rails(@json) %>
 <%= link_to 'Back to Homepage', root_url %>

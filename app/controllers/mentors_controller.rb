@@ -4,6 +4,7 @@ class MentorsController < ApplicationController
     @mentor = current_user
     @courses = Course.where(:user_id => @mentor.id)
     @course = Course.new	# you must new one first!!
+    @json = @courses.to_gmaps4rails
   end
 
   # POST /mentors/1
