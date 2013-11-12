@@ -31,7 +31,9 @@ group :test do
   gem 'email_spec'
   gem 'launchy'
 end
-
+group :production do
+  gem mysql2
+end
 # Deploy with Capistrano
   gem 'capistrano', '~> 3.0.0'
   gem 'capistrano-bundler'
