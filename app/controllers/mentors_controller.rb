@@ -3,6 +3,12 @@ class MentorsController < ApplicationController
   def show
     @mentor = current_user
     @courses = Course.where(:user_id => @mentor.id)
+		@total_earn = 0
+		@courses.each do |course|
+			enrollments = Enrollment.count(:course_id => course.id)
+			@total_earn += enrollments*course.price
+			#enrollments.
+		end
     @course = Course.new	# you must new one first!!
     @json = @courses.to_gmaps4rails
   end
