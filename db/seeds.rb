@@ -45,13 +45,16 @@ pureuser = User.find_or_create_by_email :name => 'pureuser', :email => 'pureuser
 puts 'user: ' << pureuser.name
 pureuser.add_role 'user'
 
-
-course1 = Course.find_or_create_by_name(:user_id => purementor.id, :name => 'CS290B', :price => 10, :capacity => 10, :address => 'ucsb east', :longitude => -119.843, :latitude => 34.415, :gmaps => true)
+# For address and location initializations, either you provide a valid address like course4, or you explicitly provide address and (lat, lon) like course1 to course3.
+course1 = Course.find_or_create_by_name(:user_id => purementor.id, :name => 'CS 290B', :price => 10, :capacity => 10, :address => 'ucsb east', :longitude => -119.843, :latitude => 34.415)
 puts 'course: ' << course1.name
-course2 = Course.find_or_create_by_name(:user_id => purementor.id, :name => 'CS290CC', :price => 10, :capacity => 10, :address => 'ucsb north', :longitude => -119.856, :latitude => 34.422, :gmaps => true)
+course2 = Course.find_or_create_by_name(:user_id => purementor.id, :name => 'CS 290CC', :price => 10, :capacity => 10, :address => 'ucsb north', :longitude => -119.856, :latitude => 34.422)
 puts 'course: ' << course2.name
-course3 = Course.find_or_create_by_name(:user_id => mentorstudent.id, :name => 'CS40', :price => 20, :capacity => 10, :address => 'ucsb west', :longitude => -119.875, :latitude => 34.420, :gmaps => true)
+course3 = Course.find_or_create_by_name(:user_id => mentorstudent.id, :name => 'CS 40', :price => 20, :capacity => 10, :address => 'ucsb west', :longitude => -119.875, :latitude => 34.420)
 puts 'course: ' << course3.name
+
+course4 = Course.find_or_create_by_name(:user_id => mentorstudent.id, :name => 'CS No Location', :price => 20, :capacity => 10, :address => '6320 El Colegio Rd, Goleta, CA')
+puts 'course: ' << course4.name
 
 
 enrollment1 = Enrollment.create(:user_id => purestudent.id, :course_id => course1.id)
