@@ -9,6 +9,14 @@ class Course < ActiveRecord::Base
   validates :name, :presence => true
   validates :capacity, :inclusion => 1..100 
   validates :price, :inclusion => 1..100
+
+  searchable do
+    text :name
+    text :description
+    integer :capacity
+    double :price
+    integer :user_id
+  end
   
   acts_as_gmappable
   def gmaps4rails_address

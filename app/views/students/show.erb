@@ -1,3 +1,39 @@
+<b>Search Courses</b>
+<%= form_tag student_path, :method => :get do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    </p>
+    <p>
+      <%= select_tag :search_type, options_for_select(['Search by Course', 'Search by Mentor'], params[:search_type]), {:search_type => 'Search by Course'} %>
+    </p>
+<% end %>
+
+<% if @typein != nil %>
+    <% if@course_list.blank? %>
+        <b>No Match Results!</b>
+    <% else %>
+        <table>
+          <tr>
+            <td><b>Course</b></td>
+            <td><b>Description</b></td>
+            <td><b>Price</b></td>
+            <td><b>Capacity</b></td>
+          </tr>
+          <% @course_list.each do |course| %>
+              <tr>
+                <td><%= course.name %></td>
+                <td><%= course.description %></td>
+                <td><%= course.price %></td>
+                <td><%= course.capacity %></td>
+              </tr>
+          <% end %>
+        </table>
+    <% end %>
+    <p>
+    </p>
+<% end %>
+
 <%= stylesheet_link_tag 'gmaps4rails' %>
 
 <p>

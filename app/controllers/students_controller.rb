@@ -9,24 +9,74 @@ class StudentsController < ApplicationController
     my_enrollments.each do |e|
       my_courses << Course.find(e.course_id)
     end
+
+    # call search methods
+    if params[:search].blank?
+      #flash[:notice] = "Please Type in Keywords"
+    else
+      if params[:search_type] == 'Search by Course'
+        #flash[:notice] = "Search by Course"
+        search_by_course
+      else
+        #flash[:notice] = "Search by Mentor"
+        search_by_mentor
+      end
+    end
+
     @my_courses = my_courses
-		my_line_items = LineItem.where(:user_id => @student.id)
-		my_cart = []
-		@total_price = 0
+    my_line_items = LineItem.where(:user_id => @student.id)
+    my_cart = []
+    @total_price = 0
     my_line_items.each do |e|
-			course = Course.find(e.course_id)
+      course = Course.find(e.course_id)
       my_cart << course
-			@total_price += course.price			
-    end		
-		@my_cart = my_cart
+      @total_price += course.price
+    end
+    @my_cart = my_cart
     @courses = Course.all
     @json = Course.all.to_gmaps4rails
+
   end
 
   # POST /students/1	add a course to a student
   def addCourse(course_id)
     enrollment = Enrollment.create(:course_id => course_id, :user_id => current_user.id)
 		enrollment.save
+  end
+
+  def search_by_course
+    if params[:search].blank?
+      @typein = nil
+    else
+      @typein = params[:search]
+      @search = Sunspot.search(Course) do
+        keywords params[:search] do
+          highlight :name
+        end
+        order_by :price
+      end
+      @course_list = @search.results
+    end
+  end
+
+  def search_by_mentor
+    @mentors = Sunspot.search(Mentor) do
+      fulltext params[:search]
+    end
+    @typein = params[:search]
+    if @mentors.results.blank?
+      @course_list = nil
+    else
+      #@typein = params[:search]
+      @mentors.results.each do |user|
+        userid = user.id
+        @search = Sunspot.search(Course) do
+          with(:user_id, userid)
+          order_by :price
+        end
+        @course_list = @search.results
+      end
+    end
   end
 	
   # POST /students/1	add a course to a student
