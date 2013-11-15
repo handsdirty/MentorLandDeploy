@@ -46,11 +46,11 @@ puts 'user: ' << pureuser.name
 pureuser.add_role 'user'
 
 
-course1 = Course.find_or_create_by_name(:user_id => purementor.id, :name => 'CS290B', :price => 10, :capacity => 10, :address => 'ucsb east', :longitude => -119.843, :latitude => 34.415, :gmaps => true)
+course1 = Course.find_or_create_by_name(:user_id => purementor.id, :name => 'CS290 B', :price => 10, :capacity => 10, :address => 'ucsb east', :longitude => -119.843, :latitude => 34.415, :gmaps => true)
 puts 'course: ' << course1.name
-course2 = Course.find_or_create_by_name(:user_id => purementor.id, :name => 'CS290CC', :price => 10, :capacity => 10, :address => 'ucsb north', :longitude => -119.856, :latitude => 34.422, :gmaps => true)
+course2 = Course.find_or_create_by_name(:user_id => purementor.id, :name => 'CS290 C', :price => 10, :capacity => 10, :address => 'ucsb north', :longitude => -119.856, :latitude => 34.422, :gmaps => true)
 puts 'course: ' << course2.name
-course3 = Course.find_or_create_by_name(:user_id => mentorstudent.id, :name => 'CS40', :price => 20, :capacity => 10, :address => 'ucsb west', :longitude => -119.875, :latitude => 34.420, :gmaps => true)
+course3 = Course.find_or_create_by_name(:user_id => mentorstudent.id, :name => 'CS 40', :price => 20, :capacity => 10, :address => 'ucsb west', :longitude => -119.875, :latitude => 34.420, :gmaps => true)
 puts 'course: ' << course3.name
 
 

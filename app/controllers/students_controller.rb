@@ -50,29 +50,29 @@ class StudentsController < ApplicationController
     else
       @typein = params[:search]
       @search = Sunspot.search(Course) do
-        keywords params[:search] do
-          highlight :name
-        end
-        order_by :price
+        keywords params[:search], :highlight => true
+        paginate :page => params[:page], :per_page => 10
+        order_by :price, :asc
       end
       @course_list = @search.results
     end
   end
 
   def search_by_mentor
-    @mentors = Sunspot.search(Mentor) do
-      fulltext params[:search]
+    @search_mentors = Sunspot.search(Mentor) do
+      keywords params[:search]
     end
     @typein = params[:search]
-    if @mentors.results.blank?
+    if @search_mentors.results.blank?
       @course_list = nil
     else
       #@typein = params[:search]
-      @mentors.results.each do |user|
+      @search_mentors.results.each do |user|
         userid = user.id
         @search = Sunspot.search(Course) do
-          with(:user_id, userid)
-          order_by :price
+          with :user_id, userid
+          paginate :page => params[:page], :per_page => 10
+          order_by :price, :asc
         end
         @course_list = @search.results
       end
