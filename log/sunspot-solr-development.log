@@ -228,3 +228,9 @@ Nov 18, 2013 5:38:29 PM org.apache.solr.core.SolrCore execute
 INFO: [] webapp=/solr path=/select params={sort=price_e+asc&qf=name_text+description_text&hl.simple.pre=@@@hl@@@&wt=ruby&hl=on&defType=dismax&rows=10&fl=*+score&start=0&q=cs&hl.simple.post=@@@endhl@@@&fq=type:Course} hits=16 status=0 QTime=1 
 Nov 18, 2013 5:38:35 PM org.apache.solr.core.SolrCore execute
 INFO: [] webapp=/solr path=/select params={sort=price_e+asc&qf=name_text+description_text&hl.simple.pre=@@@hl@@@&wt=ruby&hl=on&defType=dismax&rows=10&fl=*+score&start=10&q=cs&hl.simple.post=@@@endhl@@@&fq=type:Course} hits=16 status=0 QTime=1 
+Nov 18, 2013 5:42:22 PM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={sort=price_e+asc&qf=name_text+description_text&hl.simple.pre=@@@hl@@@&wt=ruby&hl=on&defType=dismax&rows=10&fl=*+score&start=0&q=cs&hl.simple.post=@@@endhl@@@&fq=type:Course} hits=16 status=0 QTime=2 
+Nov 18, 2013 5:42:29 PM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={fl=*+score&start=0&q=engineer&qf=name_text&wt=ruby&fq=type:Mentor&defType=dismax&rows=30} hits=1 status=0 QTime=2 
+Nov 18, 2013 5:42:29 PM org.apache.solr.core.SolrCore execute
+INFO: [] webapp=/solr path=/select params={sort=price_e+asc&start=0&q=*:*&wt=ruby&fq=type:Course&fq=user_id_i:8&rows=10} hits=2 status=0 QTime=3 
