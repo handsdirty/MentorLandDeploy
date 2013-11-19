@@ -94,24 +94,6 @@
 </table>
 
 
-
-<b>All Courses</b>
-<table>
-<tr>
-	<td>Course Name</td>
-	<td>Price</td>
-	<td>Capacity</td>
-</tr>
-<% @courses.each do |course| %>
-<tr>
-	<td><%= course.name %></td>
-	<td><%= course.price %></td>		
-	<td><%= course.capacity %></td>
-	<td><%= button_to("Add to Cart", {:controller => "students", :action => "addtoCart", :course_id => course.id}, :remote => false) %></td>	
-</tr>
-<% end %>
-
-</table>
 <%=  gmaps4rails(@json) %>
 
 <%= link_to 'Back to Homepage', root_url %>

@@ -33,7 +33,7 @@ class StudentsController < ApplicationController
       @total_price += course.price
     end
     @my_cart = my_cart
-    @courses = Course.all
+    # @courses = Course.all
     @json = Course.all.to_gmaps4rails
 
   end
