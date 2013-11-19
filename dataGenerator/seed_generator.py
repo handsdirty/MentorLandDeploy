@@ -1,4 +1,4 @@
-mentor_size = 1000
+mentor_size = 10
 student_size = mentor_size * 10
 import random
 # prepare outfile
