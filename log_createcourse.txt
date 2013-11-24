@@ -1,0 +1,125 @@
+=> Booting WEBrick
+=> Rails 3.2.13 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-11-18 21:57:20 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WoAm5NSP9RtNfsosmctZFg2129opiJihfPhSEahBd3c="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 119 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 74ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 21:57:20 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 123ms (Views: 122.7ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-11-18 21:57:22 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (74.0ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 130ms (Views: 127.8ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-11-18 21:57:32 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LiUv2V14gDCtzgsBtzFw3ryMTpr5J1bnD5aeyn0WGE0=", "user"=>{"email"=>"mentor_9", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (name = 'mentor_9') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-11-19 05:57:32.975821', "current_sign_in_at" = '2013-11-19 05:57:32.975821', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-11-19 05:57:32.976469' WHERE "users"."id" = 16
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 97ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 21:57:32 -0800
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 16 LIMIT 1
+Processing by HomeController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'user') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'mentor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'student') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))
+  Rendered home/index.html.erb within layouts/application (69.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'mentor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'student') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m
+  Rendered layouts/_navigation.html.erb (5.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 129ms (Views: 123.4ms | ActiveRecord: 1.0ms | Solr: 0.0ms)
+
+
+Started GET "/mentor" for 127.0.0.1 at 2013-11-18 21:57:34 -0800
+Processing by MentorsController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 16 LIMIT 1
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = 16[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'user') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'mentor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'student') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m
+  Rendered /Users/zhe-mac/.rvm/gems/ruby-2.0.0-p247/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (3.1ms)
+  Rendered mentors/show.erb within layouts/application (73.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'mentor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'student') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))
+  Rendered layouts/_navigation.html.erb (5.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 194ms (Views: 167.0ms | ActiveRecord: 1.6ms | Solr: 0.0ms)
+
+
+Started POST "/mentor" for 127.0.0.1 at 2013-11-18 21:57:53 -0800
+Processing by MentorsController#createCourse as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gl5N1wWQqatzm2TVx0zhpoZze4fsnGI35S9Kf1pL6s0=", "course"=>{"name"=>"Cooking 101", "price"=>"5", "capacity"=>"10", "address"=>"778 Madrona Walk, Goleta, CA", "user_id"=>"16"}, "commit"=>"Create Course"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "courses" ("address", "capacity", "created_at", "description", "gmaps", "latitude", "location", "longitude", "name", "price", "time", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "778 Madrona Walk, Goleta, CA"], ["capacity", 10], ["created_at", Tue, 19 Nov 2013 05:57:54 UTC +00:00], ["description", nil], ["gmaps", true], ["latitude", 34.4215745], ["location", nil], ["longitude", -119.8643242], ["name", "Cooking 101"], ["price", #<BigDecimal:7fc0edfc3040,'0.5E1',9(18)>], ["time", nil], ["updated_at", Tue, 19 Nov 2013 05:57:54 UTC +00:00], ["user_id", 16]]
+  [1m[32mSOLR Request (16.3ms)[0m  [ path=#<RSolr::Client:0x007fc0edff35b0> parameters={data: [1m[1m<?xml version="1.0" encoding="UTF-8"?><add><doc><field name="id">Course 44</field><field name="type">Course</field><field name="type">ActiveRecord::Base</field><field name="class_name">Course</field><field name="capacity_i">10</field><field name="price_e">5.0</field><field name="user_id_i">16</field><field name="name_text">Cooking 101</field></doc></add>[0m, headers: [1m[1m{"Content-Type"=>"text/xml"}[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, path: [1m[1mupdate[0m, uri: [1m[1mhttp://localhost:8982/solr/update?wt=ruby[0m, open_timeout: [1m[1m[0m, read_timeout: [1m[1m[0m, retry_503: [1m[1m[0m, retry_after_limit: [1m[1m[0m} ]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/mentor
+  [1m[32mSOLR Request (18.2ms)[0m  [ path=#<RSolr::Client:0x007fc0edff35b0> parameters={data: [1m[1m<?xml version="1.0" encoding="UTF-8"?><commit/>[0m, headers: [1m[1m{"Content-Type"=>"text/xml"}[0m, method: [1m[1mpost[0m, params: [1m[1m{:wt=>:ruby}[0m, query: [1m[1mwt=ruby[0m, path: [1m[1mupdate[0m, uri: [1m[1mhttp://localhost:8982/solr/update?wt=ruby[0m, open_timeout: [1m[1m[0m, read_timeout: [1m[1m[0m, retry_503: [1m[1m[0m, retry_after_limit: [1m[1m[0m} ]
+Completed 302 Found in 592ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/mentor" for 127.0.0.1 at 2013-11-18 21:57:54 -0800
+Processing by MentorsController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 16 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = 16[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'user') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'mentor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'student') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m
+  Rendered /Users/zhe-mac/.rvm/gems/ruby-2.0.0-p247/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (1.5ms)
+  Rendered mentors/show.erb within layouts/application (58.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'mentor') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = 16 AND (((roles.name = 'student') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))
+  Rendered layouts/_navigation.html.erb (4.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 108ms (Views: 104.2ms | ActiveRecord: 0.7ms | Solr: 34.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-11-18 21:57:57 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gl5N1wWQqatzm2TVx0zhpoZze4fsnGI35S9Kf1pL6s0="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 16 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-18 21:57:57 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 39.8ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+Exiting
