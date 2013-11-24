@@ -7,6 +7,7 @@ set :deploy_to, '/home/ubuntu'
 set :user, %{ubuntu}
 set :use_sudo, false
 set :latest_release_directory, File.join(fetch(:deploy_to), 'current')
+set :branch, "master"
 
 # set :scm, :git
 
