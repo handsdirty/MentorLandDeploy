@@ -1,706 +1,533 @@
-2013-11-25 11:20:16 org.apache.solr.core.SolrResourceLoader locateSolrHome
+2013-11-26 15:58:47 org.apache.solr.core.SolrResourceLoader locateSolrHome
 信息: JNDI not configured for solr (NoInitialContextEx)
-2013-11-25 11:20:16 org.apache.solr.core.SolrResourceLoader locateSolrHome
+2013-11-26 15:58:47 org.apache.solr.core.SolrResourceLoader locateSolrHome
 信息: using system property solr.solr.home: /Users/zhe-mac/Code/MentorLandDeploy/solr
-2013-11-25 11:20:16 org.apache.solr.core.SolrResourceLoader <init>
+2013-11-26 15:58:47 org.apache.solr.core.SolrResourceLoader <init>
 信息: Solr home set to '/Users/zhe-mac/Code/MentorLandDeploy/solr/'
-2013-11-25 11:20:16 org.apache.solr.servlet.SolrDispatchFilter init
+2013-11-26 15:58:47 org.apache.solr.servlet.SolrDispatchFilter init
 信息: SolrDispatchFilter.init()
-2013-11-25 11:20:16 org.apache.solr.core.SolrResourceLoader locateSolrHome
+2013-11-26 15:58:47 org.apache.solr.core.SolrResourceLoader locateSolrHome
 信息: JNDI not configured for solr (NoInitialContextEx)
-2013-11-25 11:20:16 org.apache.solr.core.SolrResourceLoader locateSolrHome
+2013-11-26 15:58:47 org.apache.solr.core.SolrResourceLoader locateSolrHome
 信息: using system property solr.solr.home: /Users/zhe-mac/Code/MentorLandDeploy/solr
-2013-11-25 11:20:16 org.apache.solr.core.CoreContainer$Initializer initialize
+2013-11-26 15:58:47 org.apache.solr.core.CoreContainer$Initializer initialize
 信息: looking for solr.xml: /Users/zhe-mac/Code/MentorLandDeploy/solr/solr.xml
-2013-11-25 11:20:16 org.apache.solr.core.SolrResourceLoader <init>
+2013-11-26 15:58:47 org.apache.solr.core.SolrResourceLoader <init>
 信息: Solr home set to '/Users/zhe-mac/Code/MentorLandDeploy/solr/'
-2013-11-25 11:20:16 org.apache.solr.core.SolrConfig initLibs
+2013-11-26 15:58:47 org.apache.solr.core.SolrConfig initLibs
 信息: Adding specified lib dirs to ClassLoader
-2013-11-25 11:20:16 org.apache.solr.core.SolrConfig <init>
+2013-11-26 15:58:47 org.apache.solr.core.SolrConfig <init>
 信息: Loaded SolrConfig: solrconfig.xml
-2013-11-25 11:20:16 org.apache.solr.core.SolrCore <init>
+2013-11-26 15:58:47 org.apache.solr.core.SolrCore <init>
 信息: Opening new SolrCore at /Users/zhe-mac/Code/MentorLandDeploy/solr/, dataDir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/
-2013-11-25 11:20:16 org.apache.solr.schema.IndexSchema readSchema
+2013-11-26 15:58:47 org.apache.solr.schema.IndexSchema readSchema
 信息: Reading Solr Schema
-2013-11-25 11:20:17 org.apache.solr.schema.IndexSchema readSchema
+2013-11-26 15:58:47 org.apache.solr.schema.IndexSchema readSchema
 信息: Schema name=sunspot
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created string: org.apache.solr.schema.StrField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created tdouble: org.apache.solr.schema.TrieDoubleField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created rand: org.apache.solr.schema.RandomSortField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created null: org.apache.solr.analysis.StandardTokenizerFactory
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created null: org.apache.solr.analysis.StandardFilterFactory
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created null: org.apache.solr.analysis.LowerCaseFilterFactory
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created text: org.apache.solr.schema.TextField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created boolean: org.apache.solr.schema.BoolField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created date: org.apache.solr.schema.DateField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created sdouble: org.apache.solr.schema.SortableDoubleField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created sfloat: org.apache.solr.schema.SortableFloatField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created sint: org.apache.solr.schema.SortableIntField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created slong: org.apache.solr.schema.SortableLongField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created tint: org.apache.solr.schema.TrieIntField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created tfloat: org.apache.solr.schema.TrieFloatField
-2013-11-25 11:20:17 org.apache.solr.util.plugin.AbstractPluginLoader load
+2013-11-26 15:58:47 org.apache.solr.util.plugin.AbstractPluginLoader load
 信息: created tdate: org.apache.solr.schema.TrieDateField
-2013-11-25 11:20:17 org.apache.solr.schema.IndexSchema readSchema
+2013-11-26 15:58:47 org.apache.solr.schema.IndexSchema readSchema
 信息: default search field is text
-2013-11-25 11:20:17 org.apache.solr.schema.IndexSchema readSchema
+2013-11-26 15:58:47 org.apache.solr.schema.IndexSchema readSchema
 信息: query parser default operator is AND
-2013-11-25 11:20:17 org.apache.solr.schema.IndexSchema readSchema
+2013-11-26 15:58:47 org.apache.solr.schema.IndexSchema readSchema
 信息: unique key field: id
-2013-11-25 11:20:17 org.apache.solr.core.JmxMonitoredMap <init>
+2013-11-26 15:58:47 org.apache.solr.core.JmxMonitoredMap <init>
 信息: No JMX servers found, not exposing Solr information with JMX.
-2013-11-25 11:20:17 org.apache.solr.core.SolrCore initListeners
+2013-11-26 15:58:47 org.apache.solr.core.SolrCore initListeners
 信息: Added SolrEventListener: org.apache.solr.core.QuerySenderListener{queries=[]}
-2013-11-25 11:20:17 org.apache.solr.core.SolrCore initListeners
+2013-11-26 15:58:47 org.apache.solr.core.SolrCore initListeners
 信息: Added SolrEventListener: org.apache.solr.core.QuerySenderListener{queries=[{q=solr rocks,start=0,rows=10}, {q=static firstSearcher warming query from solrconfig.xml}]}
-2013-11-25 11:20:17 org.apache.solr.request.XSLTResponseWriter init
+2013-11-26 15:58:47 org.apache.solr.request.XSLTResponseWriter init
 信息: xsltCacheLifetimeSeconds=5
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created standard: solr.SearchHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created dismax: solr.SearchHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created partitioned: solr.SearchHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /spell: solr.SearchHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created tvrh: org.apache.solr.handler.component.SearchHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: adding lazy requestHandler: org.apache.solr.handler.extraction.ExtractingRequestHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /update/extract: org.apache.solr.handler.extraction.ExtractingRequestHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /terms: org.apache.solr.handler.component.SearchHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: adding lazy requestHandler: solr.SearchHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /elevate: solr.SearchHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /update: solr.XmlUpdateRequestHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /update/javabin: solr.BinaryUpdateRequestHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /analysis/document: solr.DocumentAnalysisRequestHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /analysis/field: solr.FieldAnalysisRequestHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: adding lazy requestHandler: solr.CSVRequestHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /update/csv: solr.CSVRequestHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /admin/: org.apache.solr.handler.admin.AdminHandlers
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /admin/ping: PingRequestHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /debug/dump: solr.DumpRequestHandler
-2013-11-25 11:20:17 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+2013-11-26 15:58:47 org.apache.solr.core.RequestHandlers initHandlersFromConfig
 信息: created /mlt: solr.MoreLikeThisHandler
-2013-11-25 11:20:17 org.apache.solr.search.SolrIndexSearcher <init>
-信息: Opening Searcher@a1e940b main
-2013-11-25 11:20:17 org.apache.solr.update.DirectUpdateHandler2$CommitTracker <init>
+2013-11-26 15:58:48 org.apache.solr.search.SolrIndexSearcher <init>
+信息: Opening Searcher@106df95 main
+2013-11-26 15:58:48 org.apache.solr.update.DirectUpdateHandler2$CommitTracker <init>
 信息: AutoCommit: disabled
-2013-11-25 11:20:17 org.apache.solr.handler.component.SpellCheckComponent inform
+2013-11-26 15:58:48 org.apache.solr.handler.component.SpellCheckComponent inform
 信息: Initializing spell checkers
-2013-11-25 11:20:17 org.apache.solr.spelling.AbstractLuceneSpellChecker init
+2013-11-26 15:58:48 org.apache.solr.spelling.AbstractLuceneSpellChecker init
 信息: Using WhitespaceAnalzyer for dictionary: default
-2013-11-25 11:20:17 org.apache.solr.handler.component.SpellCheckComponent inform
+2013-11-26 15:58:48 org.apache.solr.handler.component.SpellCheckComponent inform
 警告: No queryConverter defined, using default converter
-2013-11-25 11:20:17 org.apache.solr.handler.component.QueryElevationComponent inform
+2013-11-26 15:58:48 org.apache.solr.handler.component.QueryElevationComponent inform
 信息: Loading QueryElevation from: /Users/zhe-mac/Code/MentorLandDeploy/solr/conf/elevate.xml
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.QueryComponent@59050a0
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.FacetComponent@459d3b3a
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@559b808a
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.HighlightComponent@54140fee
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.StatsComponent@7121fd61
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  debug component:org.apache.solr.handler.component.DebugComponent@6e82254d
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.QueryComponent@59050a0
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.FacetComponent@459d3b3a
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@559b808a
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.HighlightComponent@54140fee
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.StatsComponent@7121fd61
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  debug component:org.apache.solr.handler.component.DebugComponent@6e82254d
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.QueryComponent@59050a0
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.FacetComponent@459d3b3a
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@559b808a
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.HighlightComponent@54140fee
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.StatsComponent@7121fd61
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  debug component:org.apache.solr.handler.component.DebugComponent@6e82254d
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.QueryComponent@59050a0
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.FacetComponent@459d3b3a
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@559b808a
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.HighlightComponent@54140fee
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.StatsComponent@7121fd61
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.SpellCheckComponent@225f1ae9
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  debug component:org.apache.solr.handler.component.DebugComponent@6e82254d
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.QueryComponent@59050a0
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.FacetComponent@459d3b3a
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@559b808a
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.HighlightComponent@54140fee
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.StatsComponent@7121fd61
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.TermVectorComponent@11dfc8a0
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  debug component:org.apache.solr.handler.component.DebugComponent@6e82254d
-2013-11-25 11:20:17 org.apache.solr.handler.component.SearchHandler inform
-信息: Adding  component:org.apache.solr.handler.component.TermsComponent@7aec898a
-2013-11-25 11:20:17 org.apache.solr.core.QuerySenderListener newSearcher
-信息: QuerySenderListener sending requests to Searcher@a1e940b main
-2013-11-25 11:20:17 org.apache.solr.core.CoreContainer register
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.QueryComponent@337748d3
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.FacetComponent@5c4e2f0a
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@10f268de
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.HighlightComponent@1ac2cf83
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.StatsComponent@6bc5af2e
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  debug component:org.apache.solr.handler.component.DebugComponent@7f702c48
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.QueryComponent@337748d3
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.FacetComponent@5c4e2f0a
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@10f268de
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.HighlightComponent@1ac2cf83
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.StatsComponent@6bc5af2e
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  debug component:org.apache.solr.handler.component.DebugComponent@7f702c48
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.QueryComponent@337748d3
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.FacetComponent@5c4e2f0a
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@10f268de
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.HighlightComponent@1ac2cf83
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.StatsComponent@6bc5af2e
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  debug component:org.apache.solr.handler.component.DebugComponent@7f702c48
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.QueryComponent@337748d3
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.FacetComponent@5c4e2f0a
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@10f268de
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.HighlightComponent@1ac2cf83
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.StatsComponent@6bc5af2e
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.SpellCheckComponent@1d6b6c55
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  debug component:org.apache.solr.handler.component.DebugComponent@7f702c48
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.QueryComponent@337748d3
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.FacetComponent@5c4e2f0a
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@10f268de
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.HighlightComponent@1ac2cf83
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.StatsComponent@6bc5af2e
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.TermVectorComponent@77954f89
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  debug component:org.apache.solr.handler.component.DebugComponent@7f702c48
+2013-11-26 15:58:48 org.apache.solr.handler.component.SearchHandler inform
+信息: Adding  component:org.apache.solr.handler.component.TermsComponent@6b98e8b4
+2013-11-26 15:58:48 org.apache.solr.core.CoreContainer register
 信息: registering core: 
-2013-11-25 11:20:17 org.apache.solr.servlet.SolrDispatchFilter init
+2013-11-26 15:58:48 org.apache.solr.servlet.SolrDispatchFilter init
 信息: user.dir=/Users/zhe-mac/.rvm/gems/ruby-2.0.0-p247/gems/sunspot_solr-1.3.3/solr
-2013-11-25 11:20:17 org.apache.solr.servlet.SolrDispatchFilter init
+2013-11-26 15:58:48 org.apache.solr.servlet.SolrDispatchFilter init
 信息: SolrDispatchFilter.init() done
-2013-11-25 11:20:17 org.apache.solr.core.SolrCore execute
-信息: [] webapp=null path=null params={start=0&event=firstSearcher&q=solr+rocks&rows=10} hits=0 status=0 QTime=44 
-2013-11-25 11:20:17 org.apache.solr.core.SolrCore execute
-信息: [] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+query+from+solrconfig.xml} hits=0 status=0 QTime=2 
-2013-11-25 11:20:17 org.apache.solr.core.QuerySenderListener newSearcher
+2013-11-26 15:58:48 org.apache.solr.core.QuerySenderListener newSearcher
+信息: QuerySenderListener sending requests to Searcher@106df95 main
+2013-11-26 15:58:48 org.apache.solr.core.SolrCore execute
+信息: [] webapp=null path=null params={start=0&event=firstSearcher&q=solr+rocks&rows=10} hits=0 status=0 QTime=49 
+2013-11-26 15:58:48 org.apache.solr.core.SolrCore execute
+信息: [] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+query+from+solrconfig.xml} hits=0 status=0 QTime=4 
+2013-11-26 15:58:48 org.apache.solr.core.QuerySenderListener newSearcher
 信息: QuerySenderListener done.
-2013-11-25 11:20:17 org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
-信息: Loading spell index for spellchecker: default
-2013-11-25 11:20:17 org.apache.solr.servlet.SolrServlet init
+2013-11-26 15:58:48 org.apache.solr.servlet.SolrServlet init
 信息: SolrServlet.init()
-2013-11-25 11:20:17 org.apache.solr.core.SolrCore registerSearcher
-信息: [] Registered new searcher Searcher@a1e940b main
-2013-11-25 11:20:17 org.apache.solr.core.SolrResourceLoader locateSolrHome
+2013-11-26 15:58:48 org.apache.solr.core.SolrResourceLoader locateSolrHome
 信息: JNDI not configured for solr (NoInitialContextEx)
-2013-11-25 11:20:17 org.apache.solr.core.SolrResourceLoader locateSolrHome
+2013-11-26 15:58:48 org.apache.solr.core.SolrResourceLoader locateSolrHome
 信息: using system property solr.solr.home: /Users/zhe-mac/Code/MentorLandDeploy/solr
-2013-11-25 11:20:17 org.apache.solr.servlet.SolrServlet init
+2013-11-26 15:58:48 org.apache.solr.servlet.SolrServlet init
 信息: SolrServlet.init() done
-2013-11-25 11:20:17 org.apache.solr.core.SolrResourceLoader locateSolrHome
+2013-11-26 15:58:48 org.apache.solr.core.SolrResourceLoader locateSolrHome
 信息: JNDI not configured for solr (NoInitialContextEx)
-2013-11-25 11:20:17 org.apache.solr.core.SolrResourceLoader locateSolrHome
+2013-11-26 15:58:48 org.apache.solr.core.SolrResourceLoader locateSolrHome
 信息: using system property solr.solr.home: /Users/zhe-mac/Code/MentorLandDeploy/solr
-2013-11-25 11:20:17 org.apache.solr.servlet.SolrUpdateServlet init
+2013-11-26 15:58:48 org.apache.solr.servlet.SolrUpdateServlet init
 信息: SolrUpdateServlet.init() done
-2013-11-25 11:20:22 org.apache.solr.core.SolrDeletionPolicy onInit
+2013-11-26 15:58:48 org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+信息: Loading spell index for spellchecker: default
+2013-11-26 15:58:48 org.apache.solr.core.SolrCore registerSearcher
+信息: [] Registered new searcher Searcher@106df95 main
+2013-11-26 15:58:52 org.apache.solr.core.SolrDeletionPolicy onInit
 信息: SolrDeletionPolicy.onInit: commits:num=1
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_5,version=1384841110112,generation=5,filenames=[_0.tis, _3.tii, _3.frq, _1.frq, _3.fdt, _3.fnm, _2.tii, _1.fnm, _1.tii, _0.prx, _3.nrm, _0.nrm, _0.fnm, _1.tis, _2.prx, _2.fdt, _0_1.del, _2.frq, _3.prx, _1_1.del, _2.fdx, _2.fnm, _3.fdx, _1.prx, _1.fdx, _2.tis, _0.tii, _1.fdt, _0.frq, _0.fdx, segments_5, _0.fdt, _1.nrm, _2.nrm, _3.tis]
-2013-11-25 11:20:22 org.apache.solr.core.SolrDeletionPolicy updateCommits
-信息: newest commit = 1384841110112
-2013-11-25 11:20:22 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {deleteByQuery=type:Course} 0 93
-2013-11-25 11:20:22 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=93 
-2013-11-25 11:20:22 org.apache.solr.update.DirectUpdateHandler2 commit
+	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_b,version=1384841110118,generation=11,filenames=[_8.tis, _0.tis, _5.fdt, _5.prx, _1.frq, _4.prx, _4.fnm, _2.tii, _3.fdt, _1.fnm, _4.fdx, _7.fnm, _7.tis, _4.frq, _7.nrm, _5.nrm, _5.tis, _7.frq, _4_1.del, _0.prx, _3.nrm, _0.fnm, _2.prx, _5_2.del, segments_b, _7.tii, _8.frq, _2.frq, _0_1.del, _2.fdt, _7.fdx, _3.prx, _6_1.del, _5.tii, _2.fdx, _7.fdt, _1.fdx, _1.prx, _2.tis, _8.fnm, _8.tii, _0.tii, _1.fdt, _0.frq, _6.fdt, _6.nrm, _2.nrm, _1.nrm, _3.frq, _3.tii, _6.frq, _6.fdx, _3.fnm, _3_1.del, _6.tis, _1.tii, _4.tis, _2_1.del, _0.nrm, _4.tii, _5.fnm, _1.tis, _6.tii, _4.nrm, _4.fdt, _5.frq, _1_1.del, _2.fnm, _8.nrm, _7.prx, _3.fdx, _8.prx, _6.prx, _5.fdx, _6.fnm, _0.fdx, _8.fdx, _0.fdt, _8.fdt, _3.tis]
+2013-11-26 15:58:52 org.apache.solr.core.SolrDeletionPolicy updateCommits
+信息: newest commit = 1384841110118
+2013-11-26 15:58:52 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {deleteByQuery=type:Course} 0 85
+2013-11-26 15:58:52 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=85 
+2013-11-26 15:58:52 org.apache.solr.update.DirectUpdateHandler2 commit
 信息: start commit(optimize=false,waitFlush=false,waitSearcher=true,expungeDeletes=false)
-2013-11-25 11:20:22 org.apache.solr.core.SolrDeletionPolicy onCommit
+2013-11-26 15:58:52 org.apache.solr.core.SolrDeletionPolicy onCommit
 信息: SolrDeletionPolicy.onCommit: commits:num=2
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_5,version=1384841110112,generation=5,filenames=[_0.tis, _3.tii, _3.frq, _1.frq, _3.fdt, _3.fnm, _2.tii, _1.fnm, _1.tii, _0.prx, _3.nrm, _0.nrm, _0.fnm, _1.tis, _2.prx, _2.fdt, _0_1.del, _2.frq, _3.prx, _1_1.del, _2.fdx, _2.fnm, _3.fdx, _1.prx, _1.fdx, _2.tis, _0.tii, _1.fdt, _0.frq, _0.fdx, segments_5, _0.fdt, _1.nrm, _2.nrm, _3.tis]
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_6,version=1384841110113,generation=6,filenames=[_0.tis, _3.tii, _3.frq, _1.frq, _3.fdt, _3.fnm, _2.tii, _1.fnm, _1.tii, _2_1.del, _0.prx, _3.nrm, _0.nrm, _0.fnm, _1.tis, _2.prx, _2.fdt, _0_1.del, _2.frq, _3.prx, _1_1.del, _2.fdx, _2.fnm, _3.fdx, _1.prx, _1.fdx, _2.tis, _0.tii, _1.fdt, _0.frq, _0.fdx, segments_6, _0.fdt, _1.nrm, _2.nrm, _3.tis]
-2013-11-25 11:20:22 org.apache.solr.core.SolrDeletionPolicy updateCommits
-信息: newest commit = 1384841110113
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher <init>
-信息: Opening Searcher@62c4afc4 main
-2013-11-25 11:20:22 org.apache.solr.update.DirectUpdateHandler2 commit
+	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_b,version=1384841110118,generation=11,filenames=[_8.tis, _0.tis, _5.fdt, _5.prx, _1.frq, _4.prx, _4.fnm, _2.tii, _3.fdt, _1.fnm, _4.fdx, _7.fnm, _7.tis, _4.frq, _7.nrm, _5.nrm, _5.tis, _7.frq, _4_1.del, _0.prx, _3.nrm, _0.fnm, _2.prx, _5_2.del, segments_b, _7.tii, _8.frq, _2.frq, _0_1.del, _2.fdt, _7.fdx, _3.prx, _6_1.del, _5.tii, _2.fdx, _7.fdt, _1.fdx, _1.prx, _2.tis, _8.fnm, _8.tii, _0.tii, _1.fdt, _0.frq, _6.fdt, _6.nrm, _2.nrm, _1.nrm, _3.frq, _3.tii, _6.frq, _6.fdx, _3.fnm, _3_1.del, _6.tis, _1.tii, _4.tis, _2_1.del, _0.nrm, _4.tii, _5.fnm, _1.tis, _6.tii, _4.nrm, _4.fdt, _5.frq, _1_1.del, _2.fnm, _8.nrm, _7.prx, _3.fdx, _8.prx, _6.prx, _5.fdx, _6.fnm, _0.fdx, _8.fdx, _0.fdt, _8.fdt, _3.tis]
+	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_c,version=1384841110119,generation=12,filenames=[_7_1.del, _8.tis, _0.tis, _5.fdt, _5.prx, _1.frq, _4.prx, _4.fnm, _2.tii, _3.fdt, _1.fnm, _4.fdx, _7.fnm, _7.tis, _4.frq, _7.nrm, _5.nrm, _5.tis, _7.frq, _4_1.del, _0.prx, _3.nrm, segments_c, _0.fnm, _2.prx, _5_2.del, _7.tii, _8.frq, _2.frq, _0_1.del, _2.fdt, _7.fdx, _3.prx, _6_1.del, _5.tii, _2.fdx, _7.fdt, _1.fdx, _1.prx, _2.tis, _8.fnm, _8.tii, _0.tii, _1.fdt, _0.frq, _6.fdt, _6.nrm, _2.nrm, _1.nrm, _3.frq, _3.tii, _6.frq, _6.fdx, _3.fnm, _3_1.del, _6.tis, _1.tii, _4.tis, _2_1.del, _0.nrm, _4.tii, _5.fnm, _1.tis, _6.tii, _4.nrm, _4.fdt, _5.frq, _1_1.del, _2.fnm, _8.nrm, _7.prx, _3.fdx, _8.prx, _6.prx, _5.fdx, _6.fnm, _0.fdx, _8.fdx, _0.fdt, _8.fdt, _3.tis]
+2013-11-26 15:58:52 org.apache.solr.core.SolrDeletionPolicy updateCommits
+信息: newest commit = 1384841110119
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher <init>
+信息: Opening Searcher@3eb52a28 main
+2013-11-26 15:58:52 org.apache.solr.update.DirectUpdateHandler2 commit
 信息: end_commit_flush
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@62c4afc4 main from Searcher@a1e940b main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming Searcher@3eb52a28 main from Searcher@106df95 main
 	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@62c4afc4 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming result for Searcher@3eb52a28 main
 	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@62c4afc4 main from Searcher@a1e940b main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming Searcher@3eb52a28 main from Searcher@106df95 main
 	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@62c4afc4 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming result for Searcher@3eb52a28 main
 	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@62c4afc4 main from Searcher@a1e940b main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming Searcher@3eb52a28 main from Searcher@106df95 main
 	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=2,evictions=0,size=2,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@62c4afc4 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming result for Searcher@3eb52a28 main
 	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@62c4afc4 main from Searcher@a1e940b main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming Searcher@3eb52a28 main from Searcher@106df95 main
 	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@62c4afc4 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming result for Searcher@3eb52a28 main
 	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.core.QuerySenderListener newSearcher
-信息: QuerySenderListener sending requests to Searcher@62c4afc4 main
-2013-11-25 11:20:22 org.apache.solr.core.QuerySenderListener newSearcher
+2013-11-26 15:58:52 org.apache.solr.core.QuerySenderListener newSearcher
+信息: QuerySenderListener sending requests to Searcher@3eb52a28 main
+2013-11-26 15:58:52 org.apache.solr.core.QuerySenderListener newSearcher
 信息: QuerySenderListener done.
-2013-11-25 11:20:22 org.apache.solr.core.SolrCore registerSearcher
-信息: [] Registered new searcher Searcher@62c4afc4 main
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher close
-信息: Closing Searcher@a1e940b main
+2013-11-26 15:58:52 org.apache.solr.core.SolrCore registerSearcher
+信息: [] Registered new searcher Searcher@3eb52a28 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher close
+信息: Closing Searcher@106df95 main
 	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
 	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
 	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=2,evictions=0,size=2,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
 	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {commit=} 0 18
-2013-11-25 11:20:22 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=18 
-2013-11-25 11:20:22 org.apache.solr.core.SolrDeletionPolicy onInit
-信息: SolrDeletionPolicy.onInit: commits:num=1
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_6,version=1384841110113,generation=6,filenames=[_0.tis, _3.tii, _3.frq, _1.frq, _3.fdt, _3.fnm, _2.tii, _1.fnm, _1.tii, _2_1.del, _0.prx, _3.nrm, _0.nrm, _0.fnm, _1.tis, _2.prx, _2.fdt, _0_1.del, _2.frq, _3.prx, _1_1.del, _2.fdx, _2.fnm, _3.fdx, _1.prx, _1.fdx, _2.tis, _0.tii, _1.fdt, _0.frq, _0.fdx, segments_6, _0.fdt, _1.nrm, _2.nrm, _3.tis]
-2013-11-25 11:20:22 org.apache.solr.core.SolrDeletionPolicy updateCommits
-信息: newest commit = 1384841110113
-2013-11-25 11:20:22 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {deleteByQuery=type:Mentor} 0 7
-2013-11-25 11:20:22 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=7 
-2013-11-25 11:20:22 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Mentor 1, Mentor 2, Mentor 3, Mentor 4, Mentor 5, Mentor 6]} 0 27
-2013-11-25 11:20:22 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=27 
-2013-11-25 11:20:22 org.apache.solr.update.DirectUpdateHandler2 commit
-信息: start commit(optimize=false,waitFlush=false,waitSearcher=true,expungeDeletes=false)
-2013-11-25 11:20:22 org.apache.solr.core.SolrDeletionPolicy onCommit
-信息: SolrDeletionPolicy.onCommit: commits:num=2
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_6,version=1384841110113,generation=6,filenames=[_0.tis, _3.tii, _3.frq, _1.frq, _3.fdt, _3.fnm, _2.tii, _1.fnm, _1.tii, _2_1.del, _0.prx, _3.nrm, _0.nrm, _0.fnm, _1.tis, _2.prx, _2.fdt, _0_1.del, _2.frq, _3.prx, _1_1.del, _2.fdx, _2.fnm, _3.fdx, _1.prx, _1.fdx, _2.tis, _0.tii, _1.fdt, _0.frq, _0.fdx, segments_6, _0.fdt, _1.nrm, _2.nrm, _3.tis]
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_7,version=1384841110114,generation=7,filenames=[_0.tis, _3.tii, _3.frq, _1.frq, _4.prx, _4.fnm, _3.fdt, _3.fnm, _2.tii, _1.fnm, _3_1.del, _4.fdx, _4.frq, _1.tii, _4.tis, _2_1.del, _0.prx, _3.nrm, _4.tii, _0.nrm, _0.fnm, _1.tis, _2.prx, _4.nrm, _2.fdt, _0_1.del, _2.frq, _4.fdt, _3.prx, _1_1.del, _2.fdx, _2.fnm, _3.fdx, _1.prx, _1.fdx, segments_7, _2.tis, _0.tii, _1.fdt, _0.frq, _0.fdx, _0.fdt, _1.nrm, _2.nrm, _3.tis]
-2013-11-25 11:20:22 org.apache.solr.core.SolrDeletionPolicy updateCommits
-信息: newest commit = 1384841110114
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher <init>
-信息: Opening Searcher@6a8ef455 main
-2013-11-25 11:20:22 org.apache.solr.update.DirectUpdateHandler2 commit
-信息: end_commit_flush
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@6a8ef455 main from Searcher@62c4afc4 main
-	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@6a8ef455 main
-	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@6a8ef455 main from Searcher@62c4afc4 main
-	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@6a8ef455 main
-	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@6a8ef455 main from Searcher@62c4afc4 main
-	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@6a8ef455 main
-	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@6a8ef455 main from Searcher@62c4afc4 main
-	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@6a8ef455 main
-	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.core.QuerySenderListener newSearcher
-信息: QuerySenderListener sending requests to Searcher@6a8ef455 main
-2013-11-25 11:20:22 org.apache.solr.core.QuerySenderListener newSearcher
-信息: QuerySenderListener done.
-2013-11-25 11:20:22 org.apache.solr.core.SolrCore registerSearcher
-信息: [] Registered new searcher Searcher@6a8ef455 main
-2013-11-25 11:20:22 org.apache.solr.search.SolrIndexSearcher close
-信息: Closing Searcher@62c4afc4 main
-	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:20:22 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {commit=} 0 29
-2013-11-25 11:20:22 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=29 
-2013-11-25 11:20:29 org.apache.solr.core.SolrDeletionPolicy onInit
-信息: SolrDeletionPolicy.onInit: commits:num=1
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_7,version=1384841110114,generation=7,filenames=[_0.tis, _3.tii, _3.frq, _1.frq, _4.prx, _4.fnm, _3.fdt, _3.fnm, _2.tii, _1.fnm, _3_1.del, _4.fdx, _4.frq, _1.tii, _4.tis, _2_1.del, _0.prx, _3.nrm, _4.tii, _0.nrm, _0.fnm, _1.tis, _2.prx, _4.nrm, _2.fdt, _0_1.del, _2.frq, _4.fdt, _3.prx, _1_1.del, _2.fdx, _2.fnm, _3.fdx, _1.prx, _1.fdx, segments_7, _2.tis, _0.tii, _1.fdt, _0.frq, _0.fdx, _0.fdt, _1.nrm, _2.nrm, _3.tis]
-2013-11-25 11:20:29 org.apache.solr.core.SolrDeletionPolicy updateCommits
-信息: newest commit = 1384841110114
-2013-11-25 11:20:29 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 1]} 0 9
-2013-11-25 11:20:29 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=9 
-2013-11-25 11:20:29 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 2]} 0 1
-2013-11-25 11:20:29 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:30 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 3]} 0 2
-2013-11-25 11:20:30 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
-2013-11-25 11:20:30 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 4]} 0 1
-2013-11-25 11:20:30 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:32 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 5]} 0 1
-2013-11-25 11:20:32 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:33 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 6]} 0 1
-2013-11-25 11:20:33 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:33 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 7]} 0 1
-2013-11-25 11:20:33 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:33 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 8]} 0 1
-2013-11-25 11:20:33 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:34 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 9]} 0 1
-2013-11-25 11:20:34 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:35 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 10]} 0 1
-2013-11-25 11:20:35 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:35 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 11]} 0 1
-2013-11-25 11:20:35 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:35 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 12]} 0 1
-2013-11-25 11:20:35 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:36 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 13]} 0 1
-2013-11-25 11:20:36 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:36 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 14]} 0 1
-2013-11-25 11:20:36 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:36 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 15]} 0 1
-2013-11-25 11:20:36 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:37 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 16]} 0 2
-2013-11-25 11:20:37 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
-2013-11-25 11:20:37 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 17]} 0 2
-2013-11-25 11:20:37 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
-2013-11-25 11:20:38 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 18]} 0 1
-2013-11-25 11:20:38 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:38 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 19]} 0 1
-2013-11-25 11:20:38 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:39 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 20]} 0 1
-2013-11-25 11:20:39 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:39 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 21]} 0 2
-2013-11-25 11:20:39 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
-2013-11-25 11:20:39 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 22]} 0 2
-2013-11-25 11:20:39 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
-2013-11-25 11:20:40 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 23]} 0 2
-2013-11-25 11:20:40 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
-2013-11-25 11:20:40 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 24]} 0 1
-2013-11-25 11:20:40 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:40 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 25]} 0 1
-2013-11-25 11:20:40 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:41 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 26]} 0 2
-2013-11-25 11:20:41 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
-2013-11-25 11:20:41 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 27]} 0 1
-2013-11-25 11:20:41 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:41 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 28]} 0 1
-2013-11-25 11:20:41 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:42 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 29]} 0 2
-2013-11-25 11:20:42 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
-2013-11-25 11:20:42 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 30]} 0 1
-2013-11-25 11:20:42 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:43 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 31]} 0 1
-2013-11-25 11:20:43 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:43 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 32]} 0 1
-2013-11-25 11:20:43 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:44 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 33]} 0 1
-2013-11-25 11:20:44 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:44 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 34]} 0 1
-2013-11-25 11:20:44 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:45 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 35]} 0 1
-2013-11-25 11:20:45 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:45 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 36]} 0 1
-2013-11-25 11:20:45 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:45 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 37]} 0 2
-2013-11-25 11:20:45 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
-2013-11-25 11:20:46 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 38]} 0 1
-2013-11-25 11:20:46 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:46 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 39]} 0 1
-2013-11-25 11:20:46 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:46 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 40]} 0 1
-2013-11-25 11:20:46 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:47 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 41]} 0 1
-2013-11-25 11:20:47 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:47 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 42]} 0 1
-2013-11-25 11:20:47 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:47 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 43]} 0 1
-2013-11-25 11:20:47 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:47 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 44]} 0 1
-2013-11-25 11:20:47 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:48 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 45]} 0 1
-2013-11-25 11:20:48 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:48 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 46]} 0 1
-2013-11-25 11:20:48 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:48 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 47]} 0 1
-2013-11-25 11:20:48 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:48 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 48]} 0 1
-2013-11-25 11:20:48 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:49 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 49]} 0 1
-2013-11-25 11:20:49 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:50 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 50]} 0 1
-2013-11-25 11:20:50 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:50 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 51]} 0 1
-2013-11-25 11:20:50 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:51 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 52]} 0 1
-2013-11-25 11:20:51 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:20:51 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 53]} 0 2
-2013-11-25 11:20:51 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
-2013-11-25 11:20:52 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 54]} 0 1
-2013-11-25 11:20:52 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
-2013-11-25 11:21:39 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {deleteByQuery=type:Course} 0 0
-2013-11-25 11:21:39 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=0 
-2013-11-25 11:21:39 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 1, Course 2, Course 3, Course 4, Course 5, Course 6, Course 7, Course 8, ... (8 added)]} 0 33
-2013-11-25 11:21:39 org.apache.solr.core.SolrCore execute
+2013-11-26 15:58:52 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {commit=} 0 33
+2013-11-26 15:58:52 org.apache.solr.core.SolrCore execute
 信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=33 
-2013-11-25 11:21:39 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Course 51, Course 52, Course 53, Course 54]} 0 2
-2013-11-25 11:21:39 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
-2013-11-25 11:21:39 org.apache.solr.update.DirectUpdateHandler2 commit
-信息: start commit(optimize=false,waitFlush=false,waitSearcher=true,expungeDeletes=false)
-2013-11-25 11:21:39 org.apache.solr.core.SolrDeletionPolicy onCommit
-信息: SolrDeletionPolicy.onCommit: commits:num=2
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_7,version=1384841110114,generation=7,filenames=[_0.tis, _3.tii, _3.frq, _1.frq, _4.prx, _4.fnm, _3.fdt, _3.fnm, _2.tii, _1.fnm, _3_1.del, _4.fdx, _4.frq, _1.tii, _4.tis, _2_1.del, _0.prx, _3.nrm, _4.tii, _0.nrm, _0.fnm, _1.tis, _2.prx, _4.nrm, _2.fdt, _0_1.del, _2.frq, _4.fdt, _3.prx, _1_1.del, _2.fdx, _2.fnm, _3.fdx, _1.prx, _1.fdx, segments_7, _2.tis, _0.tii, _1.fdt, _0.frq, _0.fdx, _0.fdt, _1.nrm, _2.nrm, _3.tis]
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_8,version=1384841110115,generation=8,filenames=[_0.tis, _5.fdt, _5.prx, _1.frq, _4.prx, _4.fnm, _2.tii, _3.fdt, _1.fnm, _4.fdx, _4.frq, _5.nrm, _5.tis, _0.prx, _3.nrm, _0.fnm, _2.prx, _2.frq, _0_1.del, _2.fdt, _3.prx, _5.tii, _2.fdx, _1.fdx, _1.prx, _2.tis, _0.tii, _1.fdt, _0.frq, _2.nrm, _1.nrm, _3.frq, _3.tii, _3.fnm, _3_1.del, _1.tii, _4.tis, _2_1.del, _0.nrm, _4.tii, _5.fnm, _1.tis, _4.nrm, _4.fdt, _5.frq, _1_1.del, _2.fnm, _3.fdx, segments_8, _5.fdx, _0.fdx, _5_1.del, _0.fdt, _3.tis]
-2013-11-25 11:21:39 org.apache.solr.core.SolrDeletionPolicy updateCommits
-信息: newest commit = 1384841110115
-2013-11-25 11:21:39 org.apache.solr.search.SolrIndexSearcher <init>
-信息: Opening Searcher@28294f62 main
-2013-11-25 11:21:39 org.apache.solr.update.DirectUpdateHandler2 commit
-信息: end_commit_flush
-2013-11-25 11:21:39 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@28294f62 main from Searcher@6a8ef455 main
-	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:39 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@28294f62 main
-	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:39 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@28294f62 main from Searcher@6a8ef455 main
-	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:39 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@28294f62 main
-	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:39 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@28294f62 main from Searcher@6a8ef455 main
-	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:39 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@28294f62 main
-	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:39 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@28294f62 main from Searcher@6a8ef455 main
-	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:39 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@28294f62 main
-	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:39 org.apache.solr.core.QuerySenderListener newSearcher
-信息: QuerySenderListener sending requests to Searcher@28294f62 main
-2013-11-25 11:21:39 org.apache.solr.core.QuerySenderListener newSearcher
-信息: QuerySenderListener done.
-2013-11-25 11:21:39 org.apache.solr.core.SolrCore registerSearcher
-信息: [] Registered new searcher Searcher@28294f62 main
-2013-11-25 11:21:39 org.apache.solr.search.SolrIndexSearcher close
-信息: Closing Searcher@6a8ef455 main
-	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:39 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {commit=} 0 38
-2013-11-25 11:21:39 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=38 
-2013-11-25 11:21:39 org.apache.solr.core.SolrDeletionPolicy onInit
+2013-11-26 15:58:52 org.apache.solr.core.SolrDeletionPolicy onInit
 信息: SolrDeletionPolicy.onInit: commits:num=1
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_8,version=1384841110115,generation=8,filenames=[_0.tis, _5.fdt, _5.prx, _1.frq, _4.prx, _4.fnm, _2.tii, _3.fdt, _1.fnm, _4.fdx, _4.frq, _5.nrm, _5.tis, _0.prx, _3.nrm, _0.fnm, _2.prx, _2.frq, _0_1.del, _2.fdt, _3.prx, _5.tii, _2.fdx, _1.fdx, _1.prx, _2.tis, _0.tii, _1.fdt, _0.frq, _2.nrm, _1.nrm, _3.frq, _3.tii, _3.fnm, _3_1.del, _1.tii, _4.tis, _2_1.del, _0.nrm, _4.tii, _5.fnm, _1.tis, _4.nrm, _4.fdt, _5.frq, _1_1.del, _2.fnm, _3.fdx, segments_8, _5.fdx, _0.fdx, _5_1.del, _0.fdt, _3.tis]
-2013-11-25 11:21:39 org.apache.solr.core.SolrDeletionPolicy updateCommits
-信息: newest commit = 1384841110115
-2013-11-25 11:21:39 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {deleteByQuery=type:Mentor} 0 9
-2013-11-25 11:21:39 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=9 
-2013-11-25 11:21:40 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Mentor 1, Mentor 2, Mentor 3, Mentor 4, Mentor 5, Mentor 6, Mentor 7, Mentor 8, ... (8 added)]} 0 24
-2013-11-25 11:21:40 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=24 
-2013-11-25 11:21:40 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Mentor 51, Mentor 52, Mentor 53, Mentor 54, Mentor 55, Mentor 56, Mentor 57, Mentor 58, ... (8 added)]} 0 20
-2013-11-25 11:21:40 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=20 
-2013-11-25 11:21:40 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {add=[Mentor 101, Mentor 102, Mentor 103, Mentor 104, Mentor 105, Mentor 106, Mentor 107, Mentor 108, ... (8 added)]} 0 6
-2013-11-25 11:21:40 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=6 
-2013-11-25 11:21:40 org.apache.solr.update.DirectUpdateHandler2 commit
+	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_c,version=1384841110119,generation=12,filenames=[_7_1.del, _8.tis, _0.tis, _5.fdt, _5.prx, _1.frq, _4.prx, _4.fnm, _2.tii, _3.fdt, _1.fnm, _4.fdx, _7.fnm, _7.tis, _4.frq, _7.nrm, _5.nrm, _5.tis, _7.frq, _4_1.del, _0.prx, _3.nrm, segments_c, _0.fnm, _2.prx, _5_2.del, _7.tii, _8.frq, _2.frq, _0_1.del, _2.fdt, _7.fdx, _3.prx, _6_1.del, _5.tii, _2.fdx, _7.fdt, _1.fdx, _1.prx, _2.tis, _8.fnm, _8.tii, _0.tii, _1.fdt, _0.frq, _6.fdt, _6.nrm, _2.nrm, _1.nrm, _3.frq, _3.tii, _6.frq, _6.fdx, _3.fnm, _3_1.del, _6.tis, _1.tii, _4.tis, _2_1.del, _0.nrm, _4.tii, _5.fnm, _1.tis, _6.tii, _4.nrm, _4.fdt, _5.frq, _1_1.del, _2.fnm, _8.nrm, _7.prx, _3.fdx, _8.prx, _6.prx, _5.fdx, _6.fnm, _0.fdx, _8.fdx, _0.fdt, _8.fdt, _3.tis]
+2013-11-26 15:58:52 org.apache.solr.core.SolrDeletionPolicy updateCommits
+信息: newest commit = 1384841110119
+2013-11-26 15:58:52 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {deleteByQuery=type:Mentor} 0 12
+2013-11-26 15:58:52 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=12 
+2013-11-26 15:58:52 org.apache.solr.update.DirectUpdateHandler2 commit
 信息: start commit(optimize=false,waitFlush=false,waitSearcher=true,expungeDeletes=false)
-2013-11-25 11:21:40 org.apache.solr.core.SolrDeletionPolicy onCommit
+2013-11-26 15:58:52 org.apache.solr.core.SolrDeletionPolicy onCommit
 信息: SolrDeletionPolicy.onCommit: commits:num=2
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_8,version=1384841110115,generation=8,filenames=[_0.tis, _5.fdt, _5.prx, _1.frq, _4.prx, _4.fnm, _2.tii, _3.fdt, _1.fnm, _4.fdx, _4.frq, _5.nrm, _5.tis, _0.prx, _3.nrm, _0.fnm, _2.prx, _2.frq, _0_1.del, _2.fdt, _3.prx, _5.tii, _2.fdx, _1.fdx, _1.prx, _2.tis, _0.tii, _1.fdt, _0.frq, _2.nrm, _1.nrm, _3.frq, _3.tii, _3.fnm, _3_1.del, _1.tii, _4.tis, _2_1.del, _0.nrm, _4.tii, _5.fnm, _1.tis, _4.nrm, _4.fdt, _5.frq, _1_1.del, _2.fnm, _3.fdx, segments_8, _5.fdx, _0.fdx, _5_1.del, _0.fdt, _3.tis]
-	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_9,version=1384841110116,generation=9,filenames=[_0.tis, _5.fdt, _5.prx, _1.frq, _4.prx, _4.fnm, _2.tii, _3.fdt, _1.fnm, _4.fdx, _4.frq, _5.nrm, _5.tis, _4_1.del, _0.prx, _3.nrm, _0.fnm, _2.prx, _2.frq, _0_1.del, _2.fdt, _3.prx, _5.tii, _2.fdx, _1.fdx, _1.prx, _2.tis, _0.tii, _1.fdt, _0.frq, _6.fdt, _6.nrm, _2.nrm, _1.nrm, _3.frq, _3.tii, _6.frq, _6.fdx, _3.fnm, _3_1.del, _6.tis, _1.tii, _4.tis, _2_1.del, _0.nrm, _4.tii, _5.fnm, _1.tis, _6.tii, _4.nrm, _4.fdt, _5.frq, _1_1.del, _2.fnm, segments_9, _3.fdx, _6.prx, _5.fdx, _6.fnm, _0.fdx, _5_1.del, _0.fdt, _3.tis]
-2013-11-25 11:21:40 org.apache.solr.core.SolrDeletionPolicy updateCommits
-信息: newest commit = 1384841110116
-2013-11-25 11:21:40 org.apache.solr.search.SolrIndexSearcher <init>
-信息: Opening Searcher@4b7361e2 main
-2013-11-25 11:21:40 org.apache.solr.update.DirectUpdateHandler2 commit
+	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_c,version=1384841110119,generation=12,filenames=[_7_1.del, _8.tis, _0.tis, _5.fdt, _5.prx, _1.frq, _4.prx, _4.fnm, _2.tii, _3.fdt, _1.fnm, _4.fdx, _7.fnm, _7.tis, _4.frq, _7.nrm, _5.nrm, _5.tis, _7.frq, _4_1.del, _0.prx, _3.nrm, segments_c, _0.fnm, _2.prx, _5_2.del, _7.tii, _8.frq, _2.frq, _0_1.del, _2.fdt, _7.fdx, _3.prx, _6_1.del, _5.tii, _2.fdx, _7.fdt, _1.fdx, _1.prx, _2.tis, _8.fnm, _8.tii, _0.tii, _1.fdt, _0.frq, _6.fdt, _6.nrm, _2.nrm, _1.nrm, _3.frq, _3.tii, _6.frq, _6.fdx, _3.fnm, _3_1.del, _6.tis, _1.tii, _4.tis, _2_1.del, _0.nrm, _4.tii, _5.fnm, _1.tis, _6.tii, _4.nrm, _4.fdt, _5.frq, _1_1.del, _2.fnm, _8.nrm, _7.prx, _3.fdx, _8.prx, _6.prx, _5.fdx, _6.fnm, _0.fdx, _8.fdx, _0.fdt, _8.fdt, _3.tis]
+	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_d,version=1384841110120,generation=13,filenames=[_7_1.del, _8.tis, _0.tis, _5.fdt, _5.prx, _1.frq, _4.prx, _4.fnm, _2.tii, _3.fdt, _1.fnm, _8_1.del, _4.fdx, _7.fnm, _7.tis, _4.frq, _7.nrm, _5.nrm, _5.tis, _7.frq, _4_1.del, _0.prx, _3.nrm, segments_d, _0.fnm, _2.prx, _5_2.del, _7.tii, _8.frq, _2.frq, _0_1.del, _2.fdt, _7.fdx, _3.prx, _6_1.del, _5.tii, _2.fdx, _7.fdt, _1.fdx, _1.prx, _2.tis, _8.fnm, _8.tii, _0.tii, _1.fdt, _0.frq, _6.fdt, _6.nrm, _2.nrm, _1.nrm, _3.frq, _3.tii, _6.frq, _6.fdx, _3.fnm, _3_1.del, _6.tis, _1.tii, _4.tis, _2_1.del, _0.nrm, _4.tii, _5.fnm, _1.tis, _6.tii, _4.nrm, _4.fdt, _5.frq, _1_1.del, _2.fnm, _8.nrm, _7.prx, _3.fdx, _8.prx, _6.prx, _5.fdx, _6.fnm, _0.fdx, _8.fdx, _0.fdt, _8.fdt, _3.tis]
+2013-11-26 15:58:52 org.apache.solr.core.SolrDeletionPolicy updateCommits
+信息: newest commit = 1384841110120
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher <init>
+信息: Opening Searcher@7e9f5cc main
+2013-11-26 15:58:52 org.apache.solr.update.DirectUpdateHandler2 commit
 信息: end_commit_flush
-2013-11-25 11:21:40 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@4b7361e2 main from Searcher@28294f62 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming Searcher@7e9f5cc main from Searcher@3eb52a28 main
 	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:40 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@4b7361e2 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming result for Searcher@7e9f5cc main
 	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:40 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@4b7361e2 main from Searcher@28294f62 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming Searcher@7e9f5cc main from Searcher@3eb52a28 main
 	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:40 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@4b7361e2 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming result for Searcher@7e9f5cc main
 	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:40 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@4b7361e2 main from Searcher@28294f62 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming Searcher@7e9f5cc main from Searcher@3eb52a28 main
 	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:40 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@4b7361e2 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming result for Searcher@7e9f5cc main
 	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:40 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming Searcher@4b7361e2 main from Searcher@28294f62 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming Searcher@7e9f5cc main from Searcher@3eb52a28 main
 	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:40 org.apache.solr.search.SolrIndexSearcher warm
-信息: autowarming result for Searcher@4b7361e2 main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher warm
+信息: autowarming result for Searcher@7e9f5cc main
 	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:40 org.apache.solr.core.QuerySenderListener newSearcher
-信息: QuerySenderListener sending requests to Searcher@4b7361e2 main
-2013-11-25 11:21:40 org.apache.solr.core.QuerySenderListener newSearcher
+2013-11-26 15:58:52 org.apache.solr.core.QuerySenderListener newSearcher
+信息: QuerySenderListener sending requests to Searcher@7e9f5cc main
+2013-11-26 15:58:52 org.apache.solr.core.QuerySenderListener newSearcher
 信息: QuerySenderListener done.
-2013-11-25 11:21:40 org.apache.solr.core.SolrCore registerSearcher
-信息: [] Registered new searcher Searcher@4b7361e2 main
-2013-11-25 11:21:40 org.apache.solr.search.SolrIndexSearcher close
-信息: Closing Searcher@28294f62 main
+2013-11-26 15:58:52 org.apache.solr.core.SolrCore registerSearcher
+信息: [] Registered new searcher Searcher@7e9f5cc main
+2013-11-26 15:58:52 org.apache.solr.search.SolrIndexSearcher close
+信息: Closing Searcher@3eb52a28 main
 	fieldValueCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
 	filterCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
 	queryResultCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
 	documentCache{lookups=0,hits=0,hitratio=0.00,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.00,cumulative_inserts=0,cumulative_evictions=0}
-2013-11-25 11:21:40 org.apache.solr.update.processor.LogUpdateProcessor finish
-信息: {commit=} 0 68
-2013-11-25 11:21:40 org.apache.solr.core.SolrCore execute
-信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=68 
+2013-11-26 15:58:52 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {commit=} 0 29
+2013-11-26 15:58:52 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=29 
+2013-11-26 15:59:03 org.apache.solr.core.SolrDeletionPolicy onInit
+信息: SolrDeletionPolicy.onInit: commits:num=1
+	commit{dir=/Users/zhe-mac/Code/MentorLandDeploy/solr/data/development/index,segFN=segments_d,version=1384841110120,generation=13,filenames=[_7_1.del, _8.tis, _0.tis, _5.fdt, _5.prx, _1.frq, _4.prx, _4.fnm, _2.tii, _3.fdt, _1.fnm, _8_1.del, _4.fdx, _7.fnm, _7.tis, _4.frq, _7.nrm, _5.nrm, _5.tis, _7.frq, _4_1.del, _0.prx, _3.nrm, segments_d, _0.fnm, _2.prx, _5_2.del, _7.tii, _8.frq, _2.frq, _0_1.del, _2.fdt, _7.fdx, _3.prx, _6_1.del, _5.tii, _2.fdx, _7.fdt, _1.fdx, _1.prx, _2.tis, _8.fnm, _8.tii, _0.tii, _1.fdt, _0.frq, _6.fdt, _6.nrm, _2.nrm, _1.nrm, _3.frq, _3.tii, _6.frq, _6.fdx, _3.fnm, _3_1.del, _6.tis, _1.tii, _4.tis, _2_1.del, _0.nrm, _4.tii, _5.fnm, _1.tis, _6.tii, _4.nrm, _4.fdt, _5.frq, _1_1.del, _2.fnm, _8.nrm, _7.prx, _3.fdx, _8.prx, _6.prx, _5.fdx, _6.fnm, _0.fdx, _8.fdx, _0.fdt, _8.fdt, _3.tis]
+2013-11-26 15:59:03 org.apache.solr.core.SolrDeletionPolicy updateCommits
+信息: newest commit = 1384841110120
+2013-11-26 15:59:03 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 1]} 0 39
+2013-11-26 15:59:03 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=39 
+2013-11-26 15:59:04 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 2]} 0 1
+2013-11-26 15:59:04 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:04 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 3]} 0 1
+2013-11-26 15:59:04 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:04 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 4]} 0 1
+2013-11-26 15:59:04 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:05 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 5]} 0 1
+2013-11-26 15:59:05 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:06 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 6]} 0 1
+2013-11-26 15:59:06 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:06 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 7]} 0 1
+2013-11-26 15:59:06 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:06 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 8]} 0 1
+2013-11-26 15:59:06 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:06 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 9]} 0 1
+2013-11-26 15:59:06 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:06 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 10]} 0 1
+2013-11-26 15:59:06 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:06 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 11]} 0 1
+2013-11-26 15:59:06 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:07 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 12]} 0 0
+2013-11-26 15:59:07 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=0 
+2013-11-26 15:59:07 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 13]} 0 1
+2013-11-26 15:59:07 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:07 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 14]} 0 1
+2013-11-26 15:59:07 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:07 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 15]} 0 2
+2013-11-26 15:59:07 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
+2013-11-26 15:59:07 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 16]} 0 1
+2013-11-26 15:59:07 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:08 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 17]} 0 1
+2013-11-26 15:59:08 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:08 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 18]} 0 1
+2013-11-26 15:59:08 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:08 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 19]} 0 1
+2013-11-26 15:59:08 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:08 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 20]} 0 2
+2013-11-26 15:59:08 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
+2013-11-26 15:59:09 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 21]} 0 2
+2013-11-26 15:59:09 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
+2013-11-26 15:59:09 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 22]} 0 1
+2013-11-26 15:59:09 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:09 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 23]} 0 1
+2013-11-26 15:59:09 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:09 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 24]} 0 2
+2013-11-26 15:59:09 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
+2013-11-26 15:59:09 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 25]} 0 1
+2013-11-26 15:59:09 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:09 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 26]} 0 0
+2013-11-26 15:59:09 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=0 
+2013-11-26 15:59:10 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 27]} 0 1
+2013-11-26 15:59:10 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:10 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 28]} 0 1
+2013-11-26 15:59:10 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:10 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 29]} 0 1
+2013-11-26 15:59:10 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:10 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 30]} 0 1
+2013-11-26 15:59:10 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:10 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 31]} 0 1
+2013-11-26 15:59:10 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:11 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 32]} 0 1
+2013-11-26 15:59:11 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:11 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 33]} 0 0
+2013-11-26 15:59:11 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=0 
+2013-11-26 15:59:11 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 34]} 0 1
+2013-11-26 15:59:11 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:11 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 35]} 0 1
+2013-11-26 15:59:11 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:11 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 36]} 0 2
+2013-11-26 15:59:11 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
+2013-11-26 15:59:12 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 37]} 0 1
+2013-11-26 15:59:12 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:12 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 38]} 0 1
+2013-11-26 15:59:12 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:12 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 39]} 0 1
+2013-11-26 15:59:12 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:12 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 40]} 0 1
+2013-11-26 15:59:12 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:12 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 41]} 0 2
+2013-11-26 15:59:12 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
+2013-11-26 15:59:13 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 42]} 0 3
+2013-11-26 15:59:13 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=3 
+2013-11-26 15:59:13 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 43]} 0 2
+2013-11-26 15:59:13 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=2 
+2013-11-26 15:59:13 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 44]} 0 0
+2013-11-26 15:59:13 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=0 
+2013-11-26 15:59:13 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 45]} 0 1
+2013-11-26 15:59:13 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
+2013-11-26 15:59:14 org.apache.solr.update.processor.LogUpdateProcessor finish
+信息: {add=[Course 46]} 0 1
+2013-11-26 15:59:14 org.apache.solr.core.SolrCore execute
+信息: [] webapp=/solr path=/update params={wt=ruby} status=0 QTime=1 
