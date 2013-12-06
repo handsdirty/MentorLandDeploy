@@ -9,8 +9,8 @@ set :rvm_ruby_version, '2.0.0-p247'
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
 
-set :server_3, %w{ec2-50-18-43-219.us-west-1.compute.amazonaws.com}
-set :server_4, %w{ec2-184-72-26-243.us-west-1.compute.amazonaws.com}
+# set :server_3, %w{ec2-50-18-43-219.us-west-1.compute.amazonaws.com}
+set :servers, %w{ec2-50-18-43-219.us-west-1.compute.amazonaws.com ec2-184-72-26-243.us-west-1.compute.amazonaws.com}
 set :server_db, %w{ec2-54-219-53-141.us-west-1.compute.amazonaws.com}
 
 # role :web, fetch(:server_name) # Needed for precompiling assets
@@ -18,9 +18,9 @@ set :server_db, %w{ec2-54-219-53-141.us-west-1.compute.amazonaws.com}
 # role :db, fetch(:server_name) # Needed for migration
 # role :all, fetch(:server_name) # This doesn't work completely yet, hence the above 3 specifications
 
-role :web, fetch(:server_3), fetch(:server_4)
-role :app, fetch(:server_3), fetch(:server_4)
-role :db, fetch(:server_db)
+role :web, fetch(:servers)
+role :app, fetch(:servers)
+role :all, fetch(:server_db)
 
 # Extended Server Syntax
 # ======================
