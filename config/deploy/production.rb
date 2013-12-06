@@ -9,12 +9,18 @@ set :rvm_ruby_version, '2.0.0-p247'
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
 
-set :server_name, %w{ec2-54-202-215-19.us-west-2.compute.amazonaws.com}
+set :server_3, %w{ec2-50-18-43-219.us-west-1.compute.amazonaws.com}
+set :server_4, %w{ec2-184-72-26-243.us-west-1.compute.amazonaws.com}
+set :server_db, %w{ec2-54-219-53-141.us-west-1.compute.amazonaws.com}
 
-role :web, fetch(:server_name) # Needed for precompiling assets
-role :app, fetch(:server_name) # Needed for preparing something I forgot what
-role :db, fetch(:server_name) # Needed for migration
-role :all, fetch(:server_name) # This doesn't work completely yet, hence the above 3 specifications
+# role :web, fetch(:server_name) # Needed for precompiling assets
+# role :app, fetch(:server_name) # Needed for preparing something I forgot what
+# role :db, fetch(:server_name) # Needed for migration
+# role :all, fetch(:server_name) # This doesn't work completely yet, hence the above 3 specifications
+
+role :web, fetch(:server_3), fetch(:server_4)
+role :app, fetch(:server_3), fetch(:server_4)
+role :db, fetch(:server_db)
 
 # Extended Server Syntax
 # ======================
@@ -30,7 +36,7 @@ role :all, fetch(:server_name) # This doesn't work completely yet, hence the abo
 # set it globally
 set :ssh_options, {
     user: %{ubuntu},                # The user we want to log in as
-    keys: %w{/Users/zhe-mac/Code/MentorLand/mentorland.pem}, # Your .pem file
+    keys: %w{/Users/zhe-mac/Code/MentorLand/mentorland_california.pem}, # Your .pem file
     forward_agent: true,          # In order for our EC2 instance to be able to access Github via ssh we need to forward our local ssh agent (since we have set up Github to accept that)
     auth_methods: %w(publickey)   # We are using ssh with .pem files  }
 }

@@ -26,7 +26,10 @@ production:
   pool: 5
   username: admin
   password: cs290mentorland
-  host: localhost
+  host: 54.219.53.141  #defaults to 127.0.0.1
+  port: 3306
+  socket: /tmp/mysql.sock
+
 
 cucumber:
   <<: *test
