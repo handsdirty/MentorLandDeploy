@@ -33,8 +33,7 @@ class StudentsController < ApplicationController
       @total_price += course.price
     end
     @my_cart = my_cart
-    # @courses = Course.all
-    @json = Course.all.to_gmaps4rails
+    @allcourses = Course.paginate(:page => params[:courses_page], :per_page => 20)
 
   end
 
@@ -51,7 +50,7 @@ class StudentsController < ApplicationController
       @typein = params[:search]
       @search = Sunspot.search(Course) do
         keywords params[:search], :highlight => true
-        paginate :page => params[:page], :per_page => 10
+        paginate :page => params[:search_page], :per_page => 10
         order_by :price, :asc
       end
       @course_list = @search.results
@@ -71,7 +70,7 @@ class StudentsController < ApplicationController
         userid = user.id
         @search = Sunspot.search(Course) do
           with :user_id, userid
-          paginate :page => params[:page], :per_page => 10
+          paginate :page => params[:search_page], :per_page => 10
           order_by :price, :asc
         end
         @course_list = @search.results

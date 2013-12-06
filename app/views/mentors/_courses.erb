@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <td><b>Course</b></td>
+    <td><b>Description</b></td>
+    <td><b>Price</b></td>
+    <td><b>Capacity</b></td>
+  </tr>
+  <% @allcourses.each do |course| %>
+      <tr>
+        <td><%= course.name %></td>
+        <td><%= course.description %></td>
+        <td><%= course.price %></td>
+        <td><%= course.capacity %></td>
+        <td><%= button_to("Add to Cart", {:controller => "students", :action => "addtoCart", :course_id => course.id}, :remote => false) %></td>
+      </tr>
+  <% end %>
+</table>
+

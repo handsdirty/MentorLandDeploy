@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(:version => 20131112022600) do
     t.integer  "user_id"
     t.string   "name"
     t.text     "description"
-    t.decimal  "price"
+    t.decimal  "price",       :precision => 10, :scale => 0
     t.integer  "capacity"
     t.string   "time"
     t.string   "location"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
     t.string   "address"
     t.float    "longitude"
     t.float    "latitude"

@@ -1,99 +1,59 @@
-<b>Search Courses</b>
-<%= form_tag student_path, :method => :get do %>
-    <p>
-      <%= text_field_tag :search, params[:search] %>
-      <%= submit_tag "Search", :name => nil %>
-    </p>
-    <p>
-      <%= select_tag :search_type, options_for_select(['Search by Course', 'Search by Mentor'], params[:search_type]), {:search_type => 'Search by Course'} %>
-    </p>
-<% end %>
+<div class="row">
+  <div class="span12">
+	<b>Search Courses</b>
+	<%= form_tag student_path, :method => :get do %>
+      	  <%= text_field_tag :search, params[:search] %>
+ 	  <%= select_tag :search_type, options_for_select(['Search by Course', 'Search by Mentor'], params[:search_type]), {:search_type => 'Search by Course'} %>
+	  <button type="button" class="btn btn-default btn-sm"><%= submit_tag "Search", :name => nil %></button>
+	<% end %>
+  </div>
+</div>
 
-<% if @typein != nil %>
+<div class="span6">
+  <% if @typein != nil %>
     <% if @course_list.blank? %>
         <b>No Match Results!</b>
     <% else %>
+	<b>Search Results</b>
         <%= render "search" %>
-        <%= will_paginate @course_list %>
+        <%= will_paginate @course_list, :param_name => 'search_page' %>
     <% end %>
-    <p>
-    </p>
-<% end %>
+  <% end %>
+  <br />
+</div>
 
+<div class="span6">
+<%= render "mycourse" %>
+</div>
+
+<div class="span6">
+<b>All Courses</b>
 <%= stylesheet_link_tag 'gmaps4rails' %>
+<%=  gmaps4rails(@allcourses.to_gmaps4rails) %>
+	
+<%= render "courses" %>
+<%= will_paginate @allcourses, :param_name => 'courses_page' %>
+</div>
 
-<p>
-  <b>Email:</b>
-  <%= @student.email %>
-</p>
+</div>
+  
 
-<p>
-  <b>Name:</b>
-  <%= @student.name %>
-</p>
+<div class="span3">
+        <b>My Cart</b>
+        <table>
+        <tr>
+                <td>Course Name</td>
+        </tr>
+        <% @my_cart.each do |course| %>
+        <tr>    
+                <td><%= course.name %></td> 
+        </tr>
+        <% end %>
+        </table>
+        <td> Total price is <%= @total_price %></td>
+        <%= button_to("Empty Cart", {:controller => "students", :action => "EmptyCart"}, :remote => false, confirm: 'Are you sure to empty the cart?') %>
+        <%= button_to("Checkout", credit_cards_url, method: :get, :remote => false) %>
+</div>
 
-<p>
-<b>My Role</b>
-    <% if @student.has_role? :user %>
-    <li>
-	User
-    </li>
-    <% end %>
-    <% if @student.has_role? :admin %>
-    <li>
-    	Admin  
-    </li>
-    <% end %>
-    <% if @student.has_role? :mentor %>
-    <li>
-    	Mentor
-    </li>
-    <% end %>
-    <% if @student.has_role? :student %>
-    <li>
-    	Student
-    </li>
-    <% end %>
-</p>
+</div>
 
-
-<b>My Cart</b>
-<table>
-<tr>
-	<td>Course Name</td>
-	<td>Price</td>
-	<td>Capacity</td>
-</tr>
-<% @my_cart.each do |course| %>
-  <tr>
-    	<td><%= course.name %></td>
-    	<td><%= course.price %></td>
-    	<td><%= course.capacity %></td>
-  </tr>
-<% end %>
-</table>
-<td> Total price is <%= @total_price %></td>
-<%= button_to("Empty Cart", {:controller => "students", :action => "EmptyCart"}, :remote => false, confirm: 'Are you sure to empty the cart?') %>
-<%= button_to("Checkout", credit_cards_url, method: :get, :remote => false) %>
-
-
-<b>My Courses</b>
-<table>
-<tr>
-	<td>Course Name</td>
-	<td>Price</td>
-	<td>Capacity</td>
-</tr>
-<% @my_courses.each do |course| %>
-  <tr>
-    	<td><%= course.name %></td>
-    	<td><%= course.price %></td>		
-    	<td><%= course.capacity %></td>
-  </tr>
-<% end %>
-</table>
-
-
-<%=  gmaps4rails(@json) %>
-
-<%= link_to 'Back to Homepage', root_url %>

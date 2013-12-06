@@ -1,0 +1,344 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1386286909.8511446:@value".I"ü-<b>Search Courses</b>
+<form accept-charset="UTF-8" action="/student" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <p>
+      <input id="search" name="search" type="text" />
+      <input type="submit" value="Search" />
+    </p>
+    <p>
+      <select id="search_type" name="search_type" search_type="Search by Course"><option value="Search by Course">Search by Course</option>
+<option value="Search by Mentor">Search by Mentor</option></select>
+    </p>
+</form>
+
+<p>
+  <b>Email:</b>
+  student_1@example.com
+</p>
+
+<p>
+  <b>Name:</b>
+  student_1
+</p>
+
+<p>
+<b>My Role</b>
+    <li>
+	User
+    </li>
+    <li>
+    	Mentor
+    </li>
+    <li>
+    	Student
+    </li>
+</p>
+
+
+<b>My Cart</b>
+<table>
+<tr>
+	<td>Course Name</td>
+	<td>Price</td>
+	<td>Capacity</td>
+</tr>
+</table>
+<td> Total price is 0</td>
+<form action="/student/EmptyCart" class="button_to" method="post"><div><input data-confirm="Are you sure to empty the cart?" type="submit" value="Empty Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form>
+<form action="http://ec2-54-202-215-19.us-west-2.compute.amazonaws.com/credit_cards" class="button_to" method="get"><div><input type="submit" value="Checkout" /></div></form>
+
+
+<b>My Courses</b>
+<table>
+<tr>
+	<td>Course Name</td>
+	<td>Price</td>
+	<td>Capacity</td>
+</tr>
+  <tr>
+    	<td>course 0 A</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 0 B</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 0 C</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 0 D</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 0 E</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 1 A</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 1 B</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 1 C</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 1 D</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 1 E</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 2 A</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 2 B</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 2 C</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 2 D</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 2 E</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 3 A</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 3 B</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 3 C</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 3 D</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 3 E</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 4 A</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 4 B</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 4 C</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+  <tr>
+    	<td>course 4 D</td>
+    	<td>10</td>		
+    	<td>100</td>
+  </tr>
+</table>
+
+
+<link href="/assets/gmaps4rails-32b6d34c50fc0024f89f6308ce8e748c.css" media="screen" rel="stylesheet" type="text/css" />
+
+<div class="map_container"> 
+  <div id="map" class="gmaps4rails_map"></div>
+</div>
+
+	
+
+<b>All Courses</b>
+<table>
+  <tr>
+    <td><b>Course</b></td>
+    <td><b>Description</b></td>
+    <td><b>Price</b></td>
+    <td><b>Capacity</b></td>
+  </tr>
+      <tr>
+        <td>CS 290B</td>
+        <td></td>
+        <td>10</td>
+        <td>10</td>
+        <td><form action="/student/addtoCart?course_id=1" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>CS 290CC</td>
+        <td></td>
+        <td>10</td>
+        <td>10</td>
+        <td><form action="/student/addtoCart?course_id=2" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>CS 40</td>
+        <td></td>
+        <td>20</td>
+        <td>10</td>
+        <td><form action="/student/addtoCart?course_id=3" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>CS No Location</td>
+        <td></td>
+        <td>20</td>
+        <td>10</td>
+        <td><form action="/student/addtoCart?course_id=4" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 0 A</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=5" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 0 B</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=6" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 0 C</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=7" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 0 D</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=8" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 0 E</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=9" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 1 A</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=10" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 1 B</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=11" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 1 C</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=12" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 1 D</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=13" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 1 E</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=14" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 2 A</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=15" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 2 B</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=16" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 2 C</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=17" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 2 D</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=18" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 2 E</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=19" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+      <tr>
+        <td>course 3 A</td>
+        <td></td>
+        <td>10</td>
+        <td>100</td>
+        <td><form action="/student/addtoCart?course_id=20" class="button_to" method="post"><div><input type="submit" value="Add to Cart" /><input name="authenticity_token" type="hidden" value="FXx4kR/n51qoSiUqGkWPMnKDhutR7GvL1SVTLx7z9h4=" /></div></form></td>
+      </tr>
+</table>
+
+
+<div class="pagination"><span class="previous_page disabled">&#8592; Previous</span> <em class="current">1</em> <a rel="next" href="/student?courses_page=2">2</a> <a href="/student?courses_page=3">3</a> <a href="/student?courses_page=4">4</a> <a href="/student?courses_page=5">5</a> <a href="/student?courses_page=6">6</a> <a href="/student?courses_page=7">7</a> <a href="/student?courses_page=8">8</a> <a href="/student?courses_page=9">9</a> <span class="gap">&hellip;</span> <a href="/student?courses_page=107">107</a> <a href="/student?courses_page=108">108</a> <a class="next_page" rel="next" href="/student?courses_page=2">Next &#8594;</a></div>
+
+
+<a href="http://ec2-54-202-215-19.us-west-2.compute.amazonaws.com/">Back to Homepage</a>
+
+:ET

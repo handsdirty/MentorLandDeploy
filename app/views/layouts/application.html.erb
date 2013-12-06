@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<DOCTYPE html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "mentorland" %></title>
@@ -20,13 +20,14 @@
     <main role="main">
       <div class="container">
         <div class="content">
-           <div class="row">
+          <div class="row">
             <div class="span12">
               <%= render 'layouts/messages' %>
-              <%= yield %>
             </div>
           </div>
+	  <%= yield %>
           <footer>
+		<%= link_to 'Back to Homepage', root_url %>
           </footer>
         </div>
       </div>

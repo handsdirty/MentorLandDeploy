@@ -1,30 +1,5 @@
-<h3>Welcome to MentorLand!</h3>
-<p>Comment: <em>Deployed: 3:12pm, Nov 9, 2013. --Zhe</em></p>
-<h4>Your Role:</h4>
-<% if user_signed_in? %>
-    <% if current_user.has_role? :user %>
-    <li>
-	User
-    </li>
-    <% end %>
-    <% if current_user.has_role? :admin %>
-    <li>
-    	Admin  
-    </li>
-    <% end %>
-    <% if current_user.has_role? :mentor %>
-    <li>
-    	Mentor
-    </li>
-    <% end %>
-    <% if current_user.has_role? :student %>
-    <li>
-    	Student
-    </li>
-    <% end %>
-<% else %>
-  <li>
-	Guest
-  </li>
-<% end %>  
-
+<div class="container">
+	<h3>Welcome to MentorLand!</h3>
+<p><em>Deployed: 3:12pm, Nov 9, 2013. --Zhe</em></p>
+<img src="/assets/mentor.gif" width=866px height=680px class="img-thumbnail" alt="MentorLand!"></img>
+</div>

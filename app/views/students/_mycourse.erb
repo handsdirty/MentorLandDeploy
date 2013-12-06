@@ -1,0 +1,16 @@
+<b>My Courses</b>
+<table frame="box" width="500">
+<tr>
+        <td>Course Name</td>
+        <td>Price</td>
+        <td>Capacity</td>
+</tr>
+<% @my_courses.each do |course| %>
+  <tr>
+        <td><%= course.name %></td>
+        <td><%= course.price %></td>
+        <td><%= course.capacity %></td>
+  </tr>
+<% end %>
+</table>
+

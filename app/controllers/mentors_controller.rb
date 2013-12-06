@@ -1,6 +1,7 @@
 class MentorsController < ApplicationController
   # GET /mentors/1
   def show
+	@allcourses = Course.paginate(:page => params[:page], :per_page => 20)
     @mentor = current_user
     @courses = Course.where(:user_id => @mentor.id)
 		# @total_earn = 0
