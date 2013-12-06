@@ -10,8 +10,8 @@ set :rvm_ruby_version, '2.0.0-p247'
 # unless any hosts have the primary property set.
 
 # set :server_3, %w{ec2-50-18-43-219.us-west-1.compute.amazonaws.com}
-set :servers, %w{ec2-50-18-43-219.us-west-1.compute.amazonaws.com ec2-184-72-26-243.us-west-1.compute.amazonaws.com}
-set :server_db, %w{ec2-54-219-53-141.us-west-1.compute.amazonaws.com}
+set :servers, %w{ec2-54-219-5-76.us-west-1.compute.amazonaws.com ec2-54-241-67-96.us-west-1.compute.amazonaws.com ec2-50-18-43-219.us-west-1.compute.amazonaws.com ec2-184-72-26-243.us-west-1.compute.amazonaws.com ec2-54-215-114-235.us-west-1.compute.amazonaws.com ec2-204-236-189-129.us-west-1.compute.amazonaws.com ec2-204-236-166-137.us-west-1.compute.amazonaws.com ec2-54-219-81-125.us-west-1.compute.amazonaws.com}
+set :server_db, %w{ec2-50-18-135-154.us-west-1.compute.amazonaws.com}
 
 # role :web, fetch(:server_name) # Needed for precompiling assets
 # role :app, fetch(:server_name) # Needed for preparing something I forgot what

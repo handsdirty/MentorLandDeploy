@@ -26,7 +26,7 @@ production:
   pool: 5
   username: admin
   password: cs290mentorland
-  host: ec2-54-219-53-141.us-west-1.compute.amazonaws.com  #defaults to 127.0.0.1
+  host: ec2-50-18-135-154.us-west-1.compute.amazonaws.com  #defaults to 127.0.0.1
   port: 3306
   socket: /tmp/mysql.sock
 
