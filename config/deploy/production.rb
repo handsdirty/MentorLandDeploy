@@ -20,7 +20,7 @@ set :server_db, %w{ec2-54-219-53-141.us-west-1.compute.amazonaws.com}
 
 role :web, fetch(:servers)
 role :app, fetch(:servers)
-role :all, fetch(:server_db)
+role :db, fetch(:server_db)
 
 # Extended Server Syntax
 # ======================
@@ -36,7 +36,7 @@ role :all, fetch(:server_db)
 # set it globally
 set :ssh_options, {
     user: %{ubuntu},                # The user we want to log in as
-    keys: %w{/Users/zhe-mac/Code/MentorLand/mentorland_california.pem}, # Your .pem file
+    keys: %w{/Users/zhe-mac/Code/MentorLandDeploy/mentorland_california.pem}, # Your .pem file
     forward_agent: true,          # In order for our EC2 instance to be able to access Github via ssh we need to forward our local ssh agent (since we have set up Github to accept that)
     auth_methods: %w(publickey)   # We are using ssh with .pem files  }
 }
