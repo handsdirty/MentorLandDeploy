@@ -19,7 +19,7 @@ test: &test
   timeout: 5000
 
 production:
-  adapter: makara_mysql2
+  adapter: 'makara_mysql2'
   encoding: utf8
   reconnect: false
   database: mentorland_production
@@ -27,7 +27,6 @@ production:
   port: 3306
   socket: /tmp/mysql.sock
   makara:
-  databases:
     blacklist_duration: 5
     master_ttl: 5
     sticky: true
