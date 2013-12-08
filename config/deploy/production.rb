@@ -10,8 +10,8 @@ set :rvm_ruby_version, '2.0.0-p247'
 # unless any hosts have the primary property set.
 
 # set :server_3, %w{ec2-50-18-43-219.us-west-1.compute.amazonaws.com}
-set :servers_11, %w{ec2-54-219-5-76.us-west-1.compute.amazonaws.com ec2-54-241-67-96.us-west-1.compute.amazonaws.com ec2-50-18-43-219.us-west-1.compute.amazonaws.com ec2-54-219-24-121.us-west-1.compute.amazonaws.com ec2-54-219-21-236.us-west-1.compute.amazonaws.com ec2-204-236-189-129.us-west-1.compute.amazonaws.com ec2-204-236-166-137.us-west-1.compute.amazonaws.com ec2-54-219-81-125.us-west-1.compute.amazonaws.com ec2-54-219-95-80.us-west-1.compute.amazonaws.com ec2-54-219-79-198.us-west-1.compute.amazonaws.com ec2-54-219-76-194.us-west-1.compute.amazonaws.com}
-set :server_4_9_10_11, %w{ec2-54-219-24-121.us-west-1.compute.amazonaws.com ec2-54-219-95-80.us-west-1.compute.amazonaws.com ec2-54-219-79-198.us-west-1.compute.amazonaws.com ec2-54-219-76-194.us-west-1.compute.amazonaws.com}
+set :server_11, %w{ec2-54-219-5-76.us-west-1.compute.amazonaws.com ec2-54-241-67-96.us-west-1.compute.amazonaws.com ec2-50-18-43-219.us-west-1.compute.amazonaws.com ec2-54-219-24-121.us-west-1.compute.amazonaws.com ec2-54-219-21-236.us-west-1.compute.amazonaws.com ec2-204-236-189-129.us-west-1.compute.amazonaws.com ec2-204-236-166-137.us-west-1.compute.amazonaws.com ec2-54-219-81-125.us-west-1.compute.amazonaws.com ec2-54-219-95-80.us-west-1.compute.amazonaws.com ec2-54-219-79-198.us-west-1.compute.amazonaws.com ec2-54-219-76-194.us-west-1.compute.amazonaws.com}
+set :server_tmp, %w{ec2-54-219-24-121.us-west-1.compute.amazonaws.com ec2-54-219-95-80.us-west-1.compute.amazonaws.com ec2-54-219-79-198.us-west-1.compute.amazonaws.com ec2-54-219-76-194.us-west-1.compute.amazonaws.com}
 set :server_db, %w{ec2-50-18-135-154.us-west-1.compute.amazonaws.com}
 
 # role :web, fetch(:server_name) # Needed for precompiling assets
@@ -19,8 +19,8 @@ set :server_db, %w{ec2-50-18-135-154.us-west-1.compute.amazonaws.com}
 # role :db, fetch(:server_name) # Needed for migration
 # role :all, fetch(:server_name) # This doesn't work completely yet, hence the above 3 specifications
 
-role :web, fetch(:servers_4_9_10_11)
-role :app, fetch(:servers_4_9_10_11)
+role :web, fetch(:server_tmp)
+role :app, fetch(:server_tmp)
 role :db, fetch(:server_db)
 
 # Extended Server Syntax
