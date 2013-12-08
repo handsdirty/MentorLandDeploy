@@ -26,6 +26,8 @@ production:
   pool: 5
   port: 3306
   socket: /tmp/mysql.sock
+  username: admin
+  password: cs290mentorland
   makara:
     blacklist_duration: 5
     master_ttl: 5
@@ -34,17 +36,11 @@ production:
     connections:
       - role: master
         host: ec2-50-18-135-154.us-west-1.compute.amazonaws.com
-        username: admin
-        password: cs290mentorland
       - role: slave
         host: ec2-54-219-199-38.us-west-1.compute.amazonaws.com
-        user: replication
-        password: cs290mentorland_slave
         weight: 10
       - role: slave
         host: ec2-184-169-251-194.us-west-1.compute.amazonaws.com
-        user: replication
-        password: cs290mentorland_slave
         weight: 10
 
 
