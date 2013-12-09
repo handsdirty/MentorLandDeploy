@@ -13,7 +13,7 @@ set :rvm_ruby_version, '2.0.0-p247'
 set :server_11, %w{ec2-54-219-5-76.us-west-1.compute.amazonaws.com ec2-54-241-67-96.us-west-1.compute.amazonaws.com ec2-50-18-43-219.us-west-1.compute.amazonaws.com ec2-54-219-24-121.us-west-1.compute.amazonaws.com ec2-54-219-21-236.us-west-1.compute.amazonaws.com ec2-204-236-189-129.us-west-1.compute.amazonaws.com ec2-204-236-166-137.us-west-1.compute.amazonaws.com ec2-54-219-81-125.us-west-1.compute.amazonaws.com ec2-54-219-95-80.us-west-1.compute.amazonaws.com ec2-54-219-79-198.us-west-1.compute.amazonaws.com ec2-54-219-76-194.us-west-1.compute.amazonaws.com}
 set :server_tmp, %w{ec2-54-219-79-198.us-west-1.compute.amazonaws.com ec2-54-219-76-194.us-west-1.compute.amazonaws.com}
 set :server_db_master, %w{ec2-50-18-135-154.us-west-1.compute.amazonaws.com}
-set :server_db_slaves, %w{ec2-54-219-199-38.us-west-1.compute.amazonaws.com ec2-54-215-22-252.us-west-1.compute.amazonaws.com}
+set :server_db_slaves, %w{ec2-54-219-199-38.us-west-1.compute.amazonaws.com ec2-204-236-153-189.us-west-1.compute.amazonaws.com}
 # role :web, fetch(:server_name) # Needed for precompiling assets
 # role :app, fetch(:server_name) # Needed for preparing something I forgot what
 # role :db, fetch(:server_name) # Needed for migration
