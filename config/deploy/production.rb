@@ -12,8 +12,8 @@ set :rvm_ruby_version, '2.0.0-p247'
 # set :server_3, %w{ec2-50-18-43-219.us-west-1.compute.amazonaws.com}
 set :server_11, %w{ec2-54-219-5-76.us-west-1.compute.amazonaws.com ec2-54-241-67-96.us-west-1.compute.amazonaws.com ec2-50-18-43-219.us-west-1.compute.amazonaws.com ec2-54-219-24-121.us-west-1.compute.amazonaws.com ec2-54-219-21-236.us-west-1.compute.amazonaws.com ec2-204-236-189-129.us-west-1.compute.amazonaws.com ec2-204-236-166-137.us-west-1.compute.amazonaws.com ec2-54-219-81-125.us-west-1.compute.amazonaws.com ec2-54-219-95-80.us-west-1.compute.amazonaws.com ec2-54-219-79-198.us-west-1.compute.amazonaws.com ec2-54-219-76-194.us-west-1.compute.amazonaws.com}
 set :server_tmp, %w{ec2-54-219-79-198.us-west-1.compute.amazonaws.com ec2-54-219-76-194.us-west-1.compute.amazonaws.com}
-set :server_db, %w{ec2-50-18-135-154.us-west-1.compute.amazonaws.com}
-set :server_db_ms, %w{ec2-50-18-135-154.us-west-1.compute.amazonaws.com ec2-54-219-199-38.us-west-1.compute.amazonaws.com ec2-184-169-251-194.us-west-1.compute.amazonaws.com}
+set :server_db_master, %w{ec2-50-18-135-154.us-west-1.compute.amazonaws.com}
+set :server_db_slaves, %w{ec2-54-219-199-38.us-west-1.compute.amazonaws.com ec2-204-236-182-234.us-west-1.compute.amazonaws.com}
 # role :web, fetch(:server_name) # Needed for precompiling assets
 # role :app, fetch(:server_name) # Needed for preparing something I forgot what
 # role :db, fetch(:server_name) # Needed for migration
@@ -21,7 +21,8 @@ set :server_db_ms, %w{ec2-50-18-135-154.us-west-1.compute.amazonaws.com ec2-54-2
 
 role :web, fetch(:server_11)
 role :app, fetch(:server_11)
-role :db, fetch(:server_db_ms)
+role :db, fetch(:server_db_master), :primary => true
+# role :db, fetch(:server_db_slaves)
 
 # Extended Server Syntax
 # ======================

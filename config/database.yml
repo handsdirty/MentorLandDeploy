@@ -40,7 +40,7 @@ production:
         host: ec2-54-219-199-38.us-west-1.compute.amazonaws.com
         weight: 10
       - role: slave
-        host: ec2-184-169-251-194.us-west-1.compute.amazonaws.com
+        host: ec2-204-236-182-234.us-west-1.compute.amazonaws.com
         weight: 10
 
 
