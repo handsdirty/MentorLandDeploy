@@ -29,7 +29,7 @@ production:
   username: admin
   password: cs290mentorland
   makara:
-    blacklist_duration: 5
+    blacklist_duration: 7200
     master_ttl: 5
     sticky: true
     rescue_connection_failures: false
@@ -40,7 +40,7 @@ production:
         host: ec2-54-219-199-38.us-west-1.compute.amazonaws.com
         weight: 10
       - role: slave
-        host: ec2-204-236-182-234.us-west-1.compute.amazonaws.com
+        host: ec2-54-215-22-252.us-west-1.compute.amazonaws.com
         weight: 10
 
 
