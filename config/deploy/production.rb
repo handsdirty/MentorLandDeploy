@@ -19,8 +19,8 @@ set :server_db_ms, %w{ec2-50-18-135-154.us-west-1.compute.amazonaws.com ec2-54-2
 # role :db, fetch(:server_name) # Needed for migration
 # role :all, fetch(:server_name) # This doesn't work completely yet, hence the above 3 specifications
 
-role :web, fetch(:server_tmp)
-role :app, fetch(:server_tmp)
+role :web, fetch(:server_11)
+role :app, fetch(:server_11)
 role :db, fetch(:server_db_ms)
 
 # Extended Server Syntax
