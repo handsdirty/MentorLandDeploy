@@ -3,7 +3,7 @@
 	<%= form_tag student_path, :method => :get do %>
         <table class="search-table">
           <tr>
-            <td style="height: 50px"><%= text_field_tag :search, params[:search], class: "search-query span7", placeholder: "Search courses here..."%></td>
+            <td style="height: 50px"><%= text_field_tag :search, params[:search], class: "search-query span7", placeholder: "Search courses or mentors here..."%></td>
             <td style="width: 120px"></td>
             <td style="height: 50px"><button type="submit" class="btn btn-large btn-primary" id="search_button">Search</button></td>
           </tr>

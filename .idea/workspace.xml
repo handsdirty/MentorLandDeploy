@@ -2,30 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbe7bec7-970e-40e5-8e23-0668c632993a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dump.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remote_reindex.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_0_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_1_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_2_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_6.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_6.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_6.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_6.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_6.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_6.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_6.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/_6.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/data/development/index/segments_8" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_0.fdx" afterPath="$PROJECT_DIR$/solr/data/development/index/_0.fdx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_0.nrm" afterPath="$PROJECT_DIR$/solr/data/development/index/_0.nrm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_0.tis" afterPath="$PROJECT_DIR$/solr/data/development/index/_0.tis" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_1.fdx" afterPath="$PROJECT_DIR$/solr/data/development/index/_1.fdx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_1.frq" afterPath="$PROJECT_DIR$/solr/data/development/index/_1.frq" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_1.nrm" afterPath="$PROJECT_DIR$/solr/data/development/index/_1.nrm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_1.tii" afterPath="$PROJECT_DIR$/solr/data/development/index/_1.tii" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_1.tis" afterPath="$PROJECT_DIR$/solr/data/development/index/_1.tis" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_2.tis" afterPath="$PROJECT_DIR$/solr/data/development/index/_2.tis" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_3.nrm" afterPath="$PROJECT_DIR$/solr/data/development/index/_3.nrm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_3.tis" afterPath="$PROJECT_DIR$/solr/data/development/index/_3.tis" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_4.nrm" afterPath="$PROJECT_DIR$/solr/data/development/index/_4.nrm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_4.tii" afterPath="$PROJECT_DIR$/solr/data/development/index/_4.tii" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_4.tis" afterPath="$PROJECT_DIR$/solr/data/development/index/_4.tis" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_5.tis" afterPath="$PROJECT_DIR$/solr/data/development/index/_5.tis" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/segments.gen" afterPath="$PROJECT_DIR$/solr/data/development/index/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/spellchecker/segments_1" afterPath="$PROJECT_DIR$/solr/data/development/spellchecker/segments_1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_0.fdt" afterPath="$PROJECT_DIR$/solr/data/development/index/_0.fdt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_0.frq" afterPath="$PROJECT_DIR$/solr/data/development/index/_0.frq" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_0.prx" afterPath="$PROJECT_DIR$/solr/data/development/index/_0.prx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_1.fdt" afterPath="$PROJECT_DIR$/solr/data/development/index/_1.fdt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_1.prx" afterPath="$PROJECT_DIR$/solr/data/development/index/_1.prx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_2.fdt" afterPath="$PROJECT_DIR$/solr/data/development/index/_2.fdt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_3.fdt" afterPath="$PROJECT_DIR$/solr/data/development/index/_3.fdt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_3.fdx" afterPath="$PROJECT_DIR$/solr/data/development/index/_3.fdx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_3.frq" afterPath="$PROJECT_DIR$/solr/data/development/index/_3.frq" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_3.prx" afterPath="$PROJECT_DIR$/solr/data/development/index/_3.prx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_4.fdt" afterPath="$PROJECT_DIR$/solr/data/development/index/_4.fdt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_4.fdx" afterPath="$PROJECT_DIR$/solr/data/development/index/_4.fdx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_4.fnm" afterPath="$PROJECT_DIR$/solr/data/development/index/_4.fnm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_4.frq" afterPath="$PROJECT_DIR$/solr/data/development/index/_4.frq" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_4.prx" afterPath="$PROJECT_DIR$/solr/data/development/index/_4.prx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/data/development/index/_5.fdt" afterPath="$PROJECT_DIR$/solr/data/development/index/_5.fdt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy/production.rb" afterPath="$PROJECT_DIR$/config/deploy/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/profile.erb" afterPath="$PROJECT_DIR$/app/views/users/profile.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/students/show.erb" afterPath="$PROJECT_DIR$/app/views/students/show.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/sunspot-solr-development.log.1" afterPath="$PROJECT_DIR$/log/sunspot-solr-development.log.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/sunspot-solr-development.log" afterPath="$PROJECT_DIR$/log/sunspot-solr-development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" afterPath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MentorLandDeploy.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386630308501" ignored="false" />
     <file path="/students_controller.rb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386640017006" ignored="false" />
-    <file path="/show.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386643914842" ignored="false" />
+    <file path="/show.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386647817259" ignored="false" />
     <file path="/Gemfile" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1384502531423" ignored="false" />
     <file path="/index.html.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386490075497" ignored="false" />
     <file path="/application.css.scss" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386392250380" ignored="false" />
     <file path="/application.html.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386397688284" ignored="false" />
-    <file path="/bootstrap_and_overrides.css.scss" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386644157956" ignored="false" />
+    <file path="/bootstrap_and_overrides.css.scss" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386648384022" ignored="false" />
     <file path="/new.html.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386490734956" ignored="false" />
     <file path="/_navigation.html.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386476697381" ignored="false" />
-    <file path="/profile.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386638167915" ignored="false" />
+    <file path="/profile.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386648559579" ignored="false" />
     <file path="/_cart.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386632957518" ignored="false" />
     <file path="/_courses.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386636551996" ignored="false" />
     <file path="/_search.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386632358595" ignored="false" />
@@ -64,9 +110,10 @@
       <file leaf-file-name="show.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/students/show.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="32" selection-start="343" selection-end="343" vertical-scroll-proportion="-3.75">
+            <state line="5" column="150" selection-start="305" selection-end="305" vertical-scroll-proportion="-3.125">
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -101,7 +148,16 @@
       <file leaf-file-name="bootstrap_and_overrides.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="33" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
+            <state line="67" column="54" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/profile.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="135" selection-start="1993" selection-end="1993" vertical-scroll-proportion="0.86">
               <folding />
             </state>
           </provider>
@@ -116,19 +172,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="students_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/students_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="21" selection-start="5119" selection-end="5119" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/creditcards/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="7" selection-start="541" selection-end="541" vertical-scroll-proportion="-11.25">
+            <state line="10" column="28" selection-start="455" selection-end="455" vertical-scroll-proportion="-6.25">
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
@@ -147,10 +194,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="11" selection-start="787" selection-end="787" vertical-scroll-proportion="0.36">
+            <state line="18" column="11" selection-start="787" selection-end="787" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
@@ -191,14 +238,14 @@
         <option value="$PROJECT_DIR$/public/assets/js/mentor.js" />
         <option value="$PROJECT_DIR$/app/views/mentors/show.erb" />
         <option value="$PROJECT_DIR$/app/views/mentors/_createcourse.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/profile.erb" />
         <option value="$PROJECT_DIR$/app/views/creditcards/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/creditcards/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/students_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/students/show.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/creditcards/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/students/show.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/users/profile.erb" />
       </list>
     </option>
   </component>
@@ -1042,13 +1089,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/profile.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="59" selection-start="268" selection-end="268" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="58" selection-start="589" selection-end="589" vertical-scroll-proportion="-11.25">
@@ -1084,17 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/creditcards/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="7" selection-start="541" selection-end="541" vertical-scroll-proportion="-11.25">
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gmaps4rails.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="4" selection-start="90" selection-end="237" vertical-scroll-proportion="0.0">
@@ -1116,6 +1145,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="6" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="11" selection-start="787" selection-end="787" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/creditcards/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="455" selection-end="455" vertical-scroll-proportion="-6.25">
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/creditcards/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="54" selection-start="525" selection-end="525" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/students/_mycourse.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="19" selection-start="349" selection-end="349" vertical-scroll-proportion="-6.25">
@@ -1130,18 +1191,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/creditcards/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="54" selection-start="525" selection-end="525" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/students/show.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="343" selection-end="343" vertical-scroll-proportion="-3.75">
+        <state line="5" column="150" selection-start="305" selection-end="305" vertical-scroll-proportion="-3.125">
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -1149,21 +1204,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="33" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
+        <state line="67" column="54" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/profile.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="787" selection-end="787" vertical-scroll-proportion="0.36">
+        <state line="64" column="135" selection-start="1993" selection-end="1993" vertical-scroll-proportion="0.86">
           <folding />
         </state>
       </provider>

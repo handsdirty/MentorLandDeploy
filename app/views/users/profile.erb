@@ -62,10 +62,10 @@
           </p>
 
           <% unless @user.has_role? :mentor %>
-              <%= button_to('Want to be a Mentor', addMentor_url, :confirm => 'Want to be a Mentor?', class: "btn btn-large btn-warning") %>
+              <%= button_to('Want to be a Mentor', addMentor_url, :confirm => 'Want to be a Mentor?', class: "btn btn-large btn-success") %>
           <% end %>
           <% unless @user.has_role? :student %>
-              <%= button_to('Want to be a Student', addStudent_url, :confirm => 'Want to be a Student?', class: "btn btn-large btn-warning") %>
+              <%= button_to('Want to be a Student', addStudent_url, :confirm => 'Want to be a Student?', class: "btn btn-large btn-success") %>
           <% end %>
 
           <br />
