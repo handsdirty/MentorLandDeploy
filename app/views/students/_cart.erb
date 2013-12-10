@@ -1,0 +1,22 @@
+<h3>My Cart</h3>
+<table class="table table-condensed">
+	<tr>
+	  <td style="height: 30px"><b>Course Name</b></td>
+      <td style="height: 30px"><b>Price</b></td>
+      <td style="height: 30px"><b>Capacity</b></td>
+	</tr>
+	<% @my_cart.each do |course| %>
+	<tr>    
+	  <td style="height: 60px"><%= course.name %></td>
+      <td style="height: 60px"><%= course.price %></td>
+      <td style="height: 60px"><%= course.capacity %></td>
+	</tr>
+	<% end %>
+</table>
+<table class="table table-cart">
+  <tr>
+    <td style="height: 60px"><h4> Total price is <%= @total_price %></h4></td>
+    <td style="height: 60px"><%= button_to("Empty Cart", {:controller => "students", :action => "EmptyCart"}, :remote => false, confirm: 'Are you sure to empty the cart?', class: "btn btn-danger") %></td>
+    <td style="height: 60px"><%= button_to("Checkout", credit_cards_url, method: :get, :remote => false, class: "btn btn-success") %></td>
+  </tr>
+</table>

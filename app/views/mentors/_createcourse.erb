@@ -1,0 +1,24 @@
+<div class="create_courses">
+  <h3>Create New Course</h3>
+  <%= simple_form_for(@course, :url => mentor_url) do |f| %>
+
+      <% if @course.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@course.errors.count, "error") %>
+              prohibited this user from being saved:</h2>
+            <ul>
+              <% @course.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+
+      <%= f.input :name , class: "text_input"%>
+      <%= f.input :price, collection: 0..50 %>
+      <%= f.input :capacity, collection: 1..50 %>
+      <%= f.input :address, class: "text_input" %>
+      <%= f.hidden_field :user_id, :value => @mentor.id %>
+      <%= f.button :submit , class: "btn btn-large btn-primary"%>
+  <% end %>
+</div>
