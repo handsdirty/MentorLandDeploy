@@ -3,6 +3,8 @@ Mentorland::Application.routes.draw do
     root :to => "home#index"
   end
   root :to => "home#index"
+  get "home" => "home#index"
+  get "index" => "home#index"
   devise_for :users
 
   get "profile" => "users#profile"	
@@ -14,7 +16,6 @@ Mentorland::Application.routes.draw do
   
   get "student" => "students#show"
   post "student" => "students#search"
-  #get "student/addtoCart" => "students#show"
   post "student/EmptyCart" => "students#EmptyCart"
   post "student/addtoCart" => "students#addtoCart"
   post "student/checkout" => "students#checkout"

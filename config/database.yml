@@ -19,16 +19,29 @@ test: &test
   timeout: 5000
 
 production:
-  adapter: mysql2
+  adapter: 'makara_mysql2'
   encoding: utf8
   reconnect: false
   database: mentorland_production
   pool: 5
-  username: admin
-  password: cs290mentorland
-  host: ec2-54-219-53-141.us-west-1.compute.amazonaws.com  #defaults to 127.0.0.1
   port: 3306
   socket: /tmp/mysql.sock
+  username: admin
+  password: cs290mentorland
+  makara:
+    blacklist_duration: 7200
+    master_ttl: 5
+    sticky: false
+    rescue_connection_failures: false
+    connections:
+      - role: master
+        host: ec2-50-18-135-154.us-west-1.compute.amazonaws.com
+      - role: slave
+        host: ec2-54-219-199-38.us-west-1.compute.amazonaws.com
+        weight: 10
+      - role: slave
+        host: ec2-204-236-153-189.us-west-1.compute.amazonaws.com
+        weight: 10
 
 
 cucumber:
