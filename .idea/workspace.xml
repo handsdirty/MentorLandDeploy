@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbe7bec7-970e-40e5-8e23-0668c632993a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/js/mentor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/js/student.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/mentors/show.erb" afterPath="$PROJECT_DIR$/app/views/mentors/show.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/students/show.erb" afterPath="$PROJECT_DIR$/app/views/students/show.erb" />
     </list>
     <ignored path="MentorLandDeploy.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386630308501" ignored="false" />
     <file path="/students_controller.rb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386640017006" ignored="false" />
-    <file path="/show.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386647817259" ignored="false" />
+    <file path="/show.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386654012546" ignored="false" />
     <file path="/Gemfile" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1384502531423" ignored="false" />
     <file path="/index.html.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386490075497" ignored="false" />
     <file path="/application.css.scss" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386392250380" ignored="false" />
@@ -57,12 +60,21 @@
       <file leaf-file-name="show.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/students/show.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="150" selection-start="305" selection-end="305" vertical-scroll-proportion="-3.125">
+            <state line="57" column="43" selection-start="2126" selection-end="2126" vertical-scroll-proportion="-21.958334">
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/mentors/show.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="43" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.68">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,19 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gmaps4rails.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gmaps4rails.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="90" selection-end="237" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap_and_overrides.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bootstrap_and_overrides.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="72" selection-start="221" selection-end="221" vertical-scroll-proportion="0.21317829">
+            <state line="24" column="37" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -183,16 +186,16 @@
         <option value="$PROJECT_DIR$/app/views/mentors/_courses.erb" />
         <option value="$PROJECT_DIR$/public/assets/js/student.js" />
         <option value="$PROJECT_DIR$/public/assets/js/mentor.js" />
-        <option value="$PROJECT_DIR$/app/views/mentors/show.erb" />
         <option value="$PROJECT_DIR$/app/views/mentors/_createcourse.erb" />
         <option value="$PROJECT_DIR$/app/views/creditcards/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/students_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/creditcards/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/students/show.erb" />
         <option value="$PROJECT_DIR$/app/views/users/profile.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/students/show.erb" />
+        <option value="$PROJECT_DIR$/app/views/mentors/show.erb" />
       </list>
     </option>
   </component>
@@ -275,28 +278,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MentorLandDeploy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MentorLandDeploy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1050,13 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mentors/show.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="56" selection-start="759" selection-end="759" vertical-scroll-proportion="-13.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/mentors/_createcourse.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="62" selection-start="827" selection-end="827" vertical-scroll-proportion="-13.125">
@@ -1124,17 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/students/show.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="150" selection-start="305" selection-end="305" vertical-scroll-proportion="-3.125">
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/profile.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="135" selection-start="1993" selection-end="1993" vertical-scroll-proportion="-26.875">
@@ -1158,7 +1121,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="72" selection-start="221" selection-end="221" vertical-scroll-proportion="0.21317829">
+        <state line="24" column="37" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/students/show.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="43" selection-start="2126" selection-end="2126" vertical-scroll-proportion="-21.958334">
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mentors/show.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="43" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.68">
           <folding />
         </state>
       </provider>
