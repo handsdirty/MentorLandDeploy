@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'active_merchant'
 class StudentsController < ApplicationController
+  @@static_search_result ||= nil
   # GET /students/1
   def show
     @student = current_user
@@ -23,7 +24,7 @@ class StudentsController < ApplicationController
       end
     end
 
-    @my_courses = my_courses
+    @my_courses = my_courses.paginate(:page => params[:mycourse_page], :per_page => 6)
     my_line_items = LineItem.where(:user_id => @student.id)
     my_cart = []
     @total_price = 0
@@ -32,15 +33,37 @@ class StudentsController < ApplicationController
       my_cart << course
       @total_price += course.price
     end
-    @my_cart = my_cart
-    @allcourses = Course.paginate(:page => params[:courses_page], :per_page => 20)
-
+    @my_cart = my_cart.paginate(:page => params[:mycart_page], :per_page => 4)
+    @allcourses = Course.paginate(:page => params[:courses_page], :per_page => 6)
+    @course_map = []
+    @my_courses.each do |course|
+      @course_map << course
+    end
+    @my_cart.each do |course|
+      @course_map << course
+    end
+    @course_list = @@static_search_result
   end
 
   # POST /students/1	add a course to a student
   def addCourse(course_id)
     enrollment = Enrollment.create(:course_id => course_id, :user_id => current_user.id)
 		enrollment.save
+  end
+
+  def search
+    # call search methods
+    if params[:search].blank?
+      #flash[:notice] = "Please Type in Keywords"
+    else
+      if params[:search_type] == 'Search by Course'
+        #flash[:notice] = "Search by Course"
+        search_by_course
+      else
+        #flash[:notice] = "Search by Mentor"
+        search_by_mentor
+      end
+    end
   end
 
   def search_by_course
@@ -50,10 +73,11 @@ class StudentsController < ApplicationController
       @typein = params[:search]
       @search = Sunspot.search(Course) do
         keywords params[:search], :highlight => true
-        paginate :page => params[:search_page], :per_page => 10
+        paginate :page => params[:search_page], :per_page => 6
         order_by :price, :asc
       end
       @course_list = @search.results
+      @@static_search_result = @course_list
     end
   end
 
@@ -70,10 +94,11 @@ class StudentsController < ApplicationController
         userid = user.id
         @search = Sunspot.search(Course) do
           with :user_id, userid
-          paginate :page => params[:search_page], :per_page => 10
+          paginate :page => params[:search_page], :per_page => 6
           order_by :price, :asc
         end
         @course_list = @search.results
+        @@static_search_result = @course_list
       end
     end
   end
@@ -84,9 +109,9 @@ class StudentsController < ApplicationController
 
     respond_to do |format|
       if @line_item.save
-        flash[:notice] = "This course was successfully added to cart!" 
+        flash[:notice] = "This course was successfully added to cart!"
         format.html { redirect_to student_url }
-      else 
+      else
 				flash[:error] = "Cannot add this course to cart!"
 				#@line_item.errors.each{|attr,msg| puts "#{attr} - #{msg}" }
         format.html { redirect_to student_url }
@@ -144,7 +169,7 @@ class StudentsController < ApplicationController
 				end					
 				my_line_items = []
 				LineItem.delete_all(:user_id => current_user.id)
-				flash[:error] = "Successfully charged $#{sprintf("%.2f", amount / 100)} to the credit card #{credit_card.display_number}"
+				flash[:notice] = "Successfully charged $#{sprintf("%.2f", amount / 100)} to the credit card #{credit_card.display_number}"
 				respond_to do |format|
 					format.html { redirect_to student_url }
 				end

@@ -1,20 +1,18 @@
-<h2>Sign up</h2>
+<body>
+  <div class="background"></div>
+  <div class = "center2 hero-unit">
+    <h2>Sign up</h2>
 
-<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
-
-
-
-  <div class="form-inputs">
-    <%= f.input :name, :required => true, :autofocus => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :password, :required => true %>
-    <%= f.input :password_confirmation, :required => true %>
+    <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+        <%= f.error_notification %>
+        <%= f.input :name, :required => true, :autofocus => true %>
+        <%= f.input :email, :required => true %>
+        <%= f.input :password, :required => true %>
+        <%= f.input :password_confirmation, :required => true %>
+        <%= f.button :submit, "Sign up", class: "btn btn-large btn-success" %>
+    <% end %>
   </div>
+</body>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
-  </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+

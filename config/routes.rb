@@ -13,7 +13,8 @@ Mentorland::Application.routes.draw do
   post "mentor" => "mentors#createCourse"
   
   get "student" => "students#show"
-  post "student" => "students#show"
+  post "student" => "students#search"
+  #get "student/addtoCart" => "students#show"
   post "student/EmptyCart" => "students#EmptyCart"
   post "student/addtoCart" => "students#addtoCart"
   post "student/checkout" => "students#checkout"

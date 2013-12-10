@@ -1,59 +1,66 @@
-<div class="row">
+<div class="search-type row">
   <div class="span12">
-	<b>Search Courses</b>
 	<%= form_tag student_path, :method => :get do %>
-      	  <%= text_field_tag :search, params[:search] %>
- 	  <%= select_tag :search_type, options_for_select(['Search by Course', 'Search by Mentor'], params[:search_type]), {:search_type => 'Search by Course'} %>
-	  <button type="button" class="btn btn-default btn-sm"><%= submit_tag "Search", :name => nil %></button>
+        <table class="search-table">
+          <tr>
+            <td style="height: 50px"><%= text_field_tag :search, params[:search], class: "search-query span7", placeholder: "Search courses here..."%></td>
+            <td style="width: 120px"></td>
+            <td style="height: 50px"><button type="submit" class="btn btn-large btn-primary" id="search_button">Search</button></td>
+          </tr>
+          <tr>
+            <td><%= select_tag :search_type, options_for_select(['Search by Course', 'Search by Mentor'], params[:search_type]), {:search_type => 'Search by Course'} %></td>
+          </tr>
+        </table>
 	<% end %>
   </div>
 </div>
-
-<div class="span6">
-  <% if @typein != nil %>
-    <% if @course_list.blank? %>
-        <b>No Match Results!</b>
-    <% else %>
-	<b>Search Results</b>
-        <%= render "search" %>
-        <%= will_paginate @course_list, :param_name => 'search_page' %>
-    <% end %>
-  <% end %>
-  <br />
+<div class="ipad tabbable tabs-left">
+  <ul class="nav nav-tabs" id="myTab">
+    <li class="active">
+		<a href="#mycourse" data-toggle="tab"><h4>My courses</h4></a>
+	</li>
+    <li>
+		<a href="#allcourse" data-toggle="tab"><h4>All courses</h4></a>
+	</li>
+    <li>
+		<a href="#searchresult" data-toggle="tab" id="search_tab"><h4>Search results</h4></a>
+	</li>
+    <li>
+		<a href="#mycart" data-toggle="tab"><h4>My cart</h4></a>
+	</li>
+  </ul>  
+  <div class="tab-content" id="tabs">
+    <div class="tab-pane active" id="mycourse">	
+		<%= render "mycourse" %>
+		<%= will_paginate @my_courses, :param_name => 'mycourse_page' %>
+	</div>
+    <div class="tab-pane" id="allcourse">
+      <h3>All Courses</h3>
+		<%= render "courses" %>
+		<%= will_paginate @allcourses, :param_name => 'courses_page' %>
+	</div>
+    <div class="tab-pane" id="searchresult">
+      <% if @course_list.blank? %>
+          <h3>No Match Results! List all courses.</h3>
+          <%= render "courses" %>
+          <%= will_paginate @allcourses, :param_name => 'courses_page' %>
+      <% else %>
+          <%= render "search" %>
+          <%= will_paginate @course_list, :param_name => 'search_page', class: "pagination" %>
+      <% end %>
+	</div>
+    <div class="tab-pane" id="mycart">	
+		<%= render "cart" %>
+		<%= will_paginate @my_cart, :param_name => 'mycart_page' %>	
+	</div>
+  </div>
 </div>
 
-<div class="span6">
-<%= render "mycourse" %>
-</div>
-
-<div class="span6">
-<b>All Courses</b>
 <%= stylesheet_link_tag 'gmaps4rails' %>
-<%=  gmaps4rails(@allcourses.to_gmaps4rails) %>
-	
-<%= render "courses" %>
-<%= will_paginate @allcourses, :param_name => 'courses_page' %>
-</div>
+<%= gmaps4rails(@course_map.to_gmaps4rails )%>
 
-</div>
-  
 
-<div class="span3">
-        <b>My Cart</b>
-        <table>
-        <tr>
-                <td>Course Name</td>
-        </tr>
-        <% @my_cart.each do |course| %>
-        <tr>    
-                <td><%= course.name %></td> 
-        </tr>
-        <% end %>
-        </table>
-        <td> Total price is <%= @total_price %></td>
-        <%= button_to("Empty Cart", {:controller => "students", :action => "EmptyCart"}, :remote => false, confirm: 'Are you sure to empty the cart?') %>
-        <%= button_to("Checkout", credit_cards_url, method: :get, :remote => false) %>
-</div>
-
-</div>
-
+<!-- javascript -->
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/student.js"></script>

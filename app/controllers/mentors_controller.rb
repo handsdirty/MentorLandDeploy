@@ -1,9 +1,9 @@
 class MentorsController < ApplicationController
   # GET /mentors/1
   def show
-	@allcourses = Course.paginate(:page => params[:page], :per_page => 20)
+		@allcourses = Course.paginate(:page => params[:courses_page], :per_page => 6)
     @mentor = current_user
-    @courses = Course.where(:user_id => @mentor.id)
+    @courses = Course.where(:user_id => @mentor.id).paginate(:page => params[:mycourse_page], :per_page => 6)
 		# @total_earn = 0
 		# @courses.each do |course|
 		# 	enrollments = Enrollment.count(:course_id => course.id)

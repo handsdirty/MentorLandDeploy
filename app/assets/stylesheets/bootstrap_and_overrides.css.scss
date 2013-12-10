@@ -1,9 +1,205 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
-body { padding-top: 60px; }
-table {
-    	max-width: none;
-	table-layout: fixed;
-	word-wrap: break-word;
+body {
+  padding-top: 60px;
+  //background-color: #bce8f1;
+  background-image: url(login2.jpg);
+  padding-bottom: 5%;
+  margin-bottom: 5%;
 }
- 
+
+table {
+  max-width: none;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+.search-type {
+  margin-top: -50px;
+  margin-right: -150px;
+  margin-left: -150px;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-image: url(search-background.jpg) 180 fill stretch;
+}
+
+.search-table {
+  margin-left: 190px;
+}
+
+.center{
+  background-color: transparentize(#d9d9d9, 0.2);
+  position: absolute;
+  width: 800px;
+  height: 240px;
+  margin-top: 120px;
+  margin-left: 8%;
+  text-align: center;
+  h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  p{
+    margin-bottom: 30px;
+  }
+}
+
+.center2{
+  background-color: transparentize(#d9d9d9, 0.2);
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  margin-top: 80px;
+  margin-left: 20%;
+  text-align: center;
+  h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  p{
+    margin-bottom: 30px;
+  }
+}
+
+.center3{
+  background-color: transparentize(#d9d9d9, 0.2);
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  margin-top: 80px;
+  margin-left: 20%;
+  text-align: center;
+  h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  p{
+    margin-bottom: 30px;
+  }
+}
+
+.center4{
+  background-color: transparentize(moccasin, 0.3);
+  position: absolute;
+  width: 1000px;
+  height: 450px;
+  margin-top: 40px;
+  margin-left: 5%;
+  text-align: left;
+  h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  p{
+    margin-bottom: 30px;
+  }
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  line-height: 1;
+}
+
+h1{
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2{
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: normal;
+}
+
+p{
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+.checkbox {
+  display: inline-block;
+  margin-top: -26px;
+  margin-left: -90px;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.profile {
+  margin-top: -200px;
+  margin-left: 220px;
+}
+
+.table-condensed {
+  width: 700px;
+  border: 2px solid #000000;
+  background-color: transparentize(moccasin, 0.3);
+}
+
+.table-condensed th,
+.table-condensed td {
+  border-top: 1px solid #000000;
+}
+
+.search-query {
+  box-sizing: content-box;
+}
+
+.nav-tabs {
+  background-color: transparentize(#222222, 0.2);
+}
+
+.ipad {
+  border: #2e1a12 solid 100px;
+  padding: 0px;
+  -webkit-border-image: url(ipad.png) 0 stretch;
+  -moz-border-image: url(ipad.png) 0 stretch;
+  border-image: url(ipad.png) 130 fill stretch;
+}
+
+.table-cart {
+  width: 700px;
+  border: 0px;
+}
+.table-cart th,
+.table-cart td {
+  border-top: 0px;
+}
+
+.pagination ul>li>.disabled {
+  background-color: moccasin;
+}
+.pagination ul>li>a {
+  background-color: moccasin;
+}
+.pagination ul>.disabled>a {
+  background-color: #2d6987;
+}
+
+.create_courses {
+  margin-left: 50px;
+}
+
+.text_input {
+  box-sizing: content-box;
+}
+
+.check_out {
+  background-color: transparentize(#d9d9d9, 0.2);
+  position: absolute;
+  width: 600px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 20%;
+  padding-bottom: 5%;
+  margin-bottom: 20px;
+  text-align: center;
+  h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+}

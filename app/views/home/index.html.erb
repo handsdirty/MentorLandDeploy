@@ -1,5 +1,21 @@
 <div class="container">
-	<h3>Welcome to MentorLand!</h3>
-<p><em>Deployed: 3:12pm, Nov 9, 2013. --Zhe</em></p>
-<img src="/assets/mentor.gif" width=866px height=680px class="img-thumbnail" alt="MentorLand!"></img>
+  <% if not signed_in?%>
+      <div class = "center hero-unit">
+        <h1>Welcome to MentorLand!</h1>
+        <p>A Platform where you can improve you academic performance immediately.</p>
+        <div class = "span12">
+          <%= link_to "Sign up now", '/users/sign_up', class: "btn btn-large btn-success"%>
+          <%= link_to "Sign in", '/users/sign_in', class: "btn btn-large btn-primary" %>
+        </div>
+      </div>
+  <% else %>
+      <div class = "center hero-unit">
+        <h1>Welcome to MentorLand!</h1>
+        <p>A Platform where you can improve you academic performance immediately.</p>
+        <div class = "span12">
+          <%= link_to "My Profile", '/profile', class: "btn btn-large btn-primary"%>
+        </div>
+      </div>
+  <% end %>
 </div>
+

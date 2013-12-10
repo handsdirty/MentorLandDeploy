@@ -1,46 +1,110 @@
-<p id="notice"><%= notice %></p>
+<div class="center4">
+  <div class="tabbable tabs-left">
+    <ul class="nav nav-tabs">
+       <li class="active">
+         <a href="#lA" data-toggle="tab"><h4>My Profile</h4></a>
+       </li>
+      <li class>
+        <a href="#lB" data-toggle="tab"><h4>My Friends List</h4></a>
+      </li>
+      <li class>
+        <a href="#lC" data-toggle="tab"><h4>My Photos</h4></a>
+      </li>
+      <li class>
+        <a href="#lD" data-toggle="tab"><h4>Setting</h4></a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="lA">
+        <ul class="thumbnails">
+          <li class="span2">
+            <a class="thumbnail" href="#">
+              <img src="assets/profile.png" alt=""/>
+              <!--<img src="http://www.shriharieducation.com/images/default_profile_male.jpg.png" alt="My Image" />-->
+              <span class="caption">This is my image</span>
+            </a>
+          </li>
+        </ul>
+        <p id="notice"><%= notice %></p>
 
-<h3>My User Profile</h3>
-<p>
-  <b>User Name:</b>
-  <%= @user.name %>
-</p>
+        <div class="profile">
+          <h3>My User Profile</h3>
+          <p>
+            <b>User Name:</b>
+            <%= @user.name %>
+          </p>
+          <p>
+            <b>User Email:</b>
+            <%= @user.email %>
+          </p>
+          <p>
+            <b>Your Role</b>
+            <% if current_user.has_role? :user %>
+              <li>
+                User
+              </li>
+          <% end %>
+          <% if current_user.has_role? :admin %>
+              <li>
+                Admin
+              </li>
+          <% end %>
+          <% if current_user.has_role? :mentor %>
+              <li>
+                Mentor
+              </li>
+          <% end %>
+          <% if current_user.has_role? :student %>
+              <li>
+                Student
+              </li>
+          <% end %>
+          </p>
+
+          <% unless @user.has_role? :mentor %>
+              <%= button_to('Want to be a Mentor', addMentor_url, :confirm => 'Want to be a Mentor?', class: "btn btn-large btn-warning") %>
+          <% end %>
+          <% unless @user.has_role? :student %>
+              <%= button_to('Want to be a Student', addStudent_url, :confirm => 'Want to be a Student?', class: "btn btn-large btn-warning") %>
+          <% end %>
+
+          <br />
+        </div>
+
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane" id="lB">
+          <h2>Empty!<h2>
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane" id="lC">
+          <h2>Your Profile Image<h2>
+            <ul class="thumbnails">
+              <li class="span2">
+                <a class="thumbnail" href="#">
+                  <img src="http://www.shriharieducation.com/images/default_profile_male.jpg.png" alt="My Image" />
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane" id="lD">
+          <h2>Coming Soon!<h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $('.nav li a').on('click', function() {
+      $(this).parent().parent().find('.active').removeClass('active');
+      $(this).parent().addClass('active');
+      $('.tab-content').find('.active').removeClass('active');
+      $($(this).attr("href")).addClass('active');
+    });
+  </script>
 
 
-<p>
-  <b>User Email:</b>
-  <%= @user.email %>
-</p>
 
-<p>
-<b>Your Role</b>
-    <% if current_user.has_role? :user %>
-    <li>
-	User
-    </li>
-    <% end %>
-    <% if current_user.has_role? :admin %>
-    <li>
-    	Admin  
-    </li>
-    <% end %>
-    <% if current_user.has_role? :mentor %>
-    <li>
-    	Mentor
-    </li>
-    <% end %>
-    <% if current_user.has_role? :student %>
-    <li>
-    	Student
-    </li>
-    <% end %>
-</p>
-
-<% unless @user.has_role? :mentor %>
-  <%= button_to('Want to be a Mentor', addMentor_url, :confirm => 'Want to be a Mentor?') %>
-<% end %>
-<% unless @user.has_role? :student %>
-  <%= button_to('Want to be a Student', addStudent_url, :confirm => 'Want to be a Student?') %>
-<% end %>
-
-<br />
+</div>

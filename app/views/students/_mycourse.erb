@@ -1,15 +1,15 @@
-<b>My Courses</b>
-<table frame="box" width="500">
+<h3>My Courses</h3>
+<table class="table table-condensed">
 <tr>
-        <td>Course Name</td>
-        <td>Price</td>
-        <td>Capacity</td>
+        <td style="height: 30px"><b>Course Name</b></td>
+        <td style="height: 30px"><b>Price</b></td>
+        <td style="height: 30px"><b>Capacity</b></td>
 </tr>
 <% @my_courses.each do |course| %>
   <tr>
-        <td><%= course.name %></td>
-        <td><%= course.price %></td>
-        <td><%= course.capacity %></td>
+        <td style="height: 60px"><%= course.name %></td>
+        <td style="height: 60px"><%= course.price %></td>
+        <td style="height: 60px"><%= course.capacity %></td>
   </tr>
 <% end %>
 </table>

@@ -1,18 +1,18 @@
-<table frame="box" width="500">
+<table class="table table-condensed">
   <tr>
-    <td><b>Course</b></td>
-    <td><b>Description</b></td>
-    <td><b>Price</b></td>
-    <td><b>Capacity</b></td>
+    <td style="height: 30px"><b>Course</b></td>
+    <td style="height: 30px"><b>Price</b></td>
+    <td style="height: 30px"><b>Capacity</b></td>
+    <td style="height: 30px"></td>
   </tr>
   <% @allcourses.each do |course| %>
       <tr>
-        <td><%= course.name %></td>
-        <td><%= course.description %></td>
-        <td><%= course.price %></td>
-        <td><%= course.capacity %></td>
-        <td><%= button_to("Add to Cart", {:controller => "students", :action => "addtoCart", :course_id => course.id}, :remote => false) %></td>
+        <td style="height: 60px"><%= course.name %></td>
+        <td style="height: 60px"><%= course.price %></td>
+        <td style="height: 60px"><%= course.capacity %></td>
+        <td style="height: 60px"><%= button_to("Add to Cart", {:controller => "students", :action => "addtoCart", :course_id => course.id}, :remote => false, class: "btn btn-warning") %></td>
       </tr>
   <% end %>
 </table>
+
 
