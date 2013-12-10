@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbe7bec7-970e-40e5-8e23-0668c632993a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/sunspot-solr-development.log" afterPath="$PROJECT_DIR$/log/sunspot-solr-development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MentorLandDeploy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,7 +15,7 @@
     <file path="/index.html.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386490075497" ignored="false" />
     <file path="/application.css.scss" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386392250380" ignored="false" />
     <file path="/application.html.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386397688284" ignored="false" />
-    <file path="/bootstrap_and_overrides.css.scss" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386648384022" ignored="false" />
+    <file path="/bootstrap_and_overrides.css.scss" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386651957641" ignored="false" />
     <file path="/new.html.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386490734956" ignored="false" />
     <file path="/_navigation.html.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386476697381" ignored="false" />
     <file path="/profile.erb" changelist="fbe7bec7-970e-40e5-8e23-0668c632993a" time="1386648559579" ignored="false" />
@@ -96,7 +95,7 @@
       <file leaf-file-name="bootstrap_and_overrides.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="61" selection-start="611" selection-end="611" vertical-scroll-proportion="0.62015504">
+            <state line="11" column="72" selection-start="221" selection-end="221" vertical-scroll-proportion="0.21317829">
               <folding />
             </state>
           </provider>
@@ -1159,7 +1158,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="61" selection-start="611" selection-end="611" vertical-scroll-proportion="0.62015504">
+        <state line="11" column="72" selection-start="221" selection-end="221" vertical-scroll-proportion="0.21317829">
           <folding />
         </state>
       </provider>
